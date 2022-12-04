@@ -1,9 +1,12 @@
 import React from 'react';
+import { SectionOne, SectionTwo, SectionThree } from './components';
 
 const home = () => {
   return (
     <div>
-      <h1 className=''>Home </h1>
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
     </div>
   );
 };

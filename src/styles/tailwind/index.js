@@ -1,23 +1,20 @@
 const styles = {
-  innerWidth: '2xl:max-w-[1280px] w-full',
-  interWidth: 'lg:w-[80%] w-[100%]',
-
-  paddings: 'sm:p-16 xs:p-8 px-6 py-12',
-  yPaddings: 'sm:py-16 xs:py-8 py-12',
-  xPaddings: 'sm:px-16 px-6',
-  topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
-  bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
-
-  flexCenter: 'flex justify-center items-center',
-  flexStart: 'flex justify-start items-start',
-  flexEnd: 'flex justify-end',
-  navPadding: 'pt-[98px]',
-
+  // max width
+  maxWidth: 'max-w-[1200px] mx-auto px-[17px] md:px-[35px]',
   // hero section
+  heroHome: 'h-[40vh] md:h-screen bg-hero-home bg-no-repeat bg-cover',
+  // heading
   heroHeading:
-    'font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white',
-  heroDText:
-    'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
+    'xxs:text-[1.2rem] xs:text-[1.6rem] sm:text-[2rem] md:text-[4rem] leading-[1.2] font-bold mb-8',
+  headerTwoBlack:
+    'text-blackText xxs:text-[1.2rem] xs:text-[1.4rem] sm:text-[1.8rem] md:text-[2.5rem] leading-[1.2] font-bold mb-8',
+  headerTwoPrimary:
+    'text-primary xxs:text-[1.2rem] xs:text-[1.4rem] sm:text-[1.8rem] md:text-[2rem] leading-[1.2] font-bold mb-8',
+  headerThreeBlack:
+    'text-blackText xs:text-[1.1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-[1.2] font-bold mb-2',
+  // button
+  buttonOne:
+    'flex items-center w-max bg-primary px-3 py-1 md:px-5 md:py-3 rounded-xl hover:bg-primaryAlt',
 };
 
 export default styles;

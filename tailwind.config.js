@@ -1,7 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './src/**/**/*.{js,jsx,ts,tsx}',
+    './public/index.html',
+  ],
   theme: {
+    screens: {
+      xxs: '200px',
+      xs: '475px',
+      ...defaultTheme.screens,
+    },
     extend: {
       margin: {
         320: '320px',
@@ -54,6 +66,10 @@ module.exports = {
         primaryBackgroundAlt: '#f52626',
         blackBackground: 'rgb(34, 35, 40)',
         grayBackground: '#919194',
+      },
+      backgroundImage: {
+        'hero-home':
+          "linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)), url('/src/assets/images/ge-hero-home.jpeg')",
       },
       keyframes: {
         'slide-in': {

@@ -24,9 +24,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
       {toggleSidebar && (
         <div className='text-white lg:hidden fixed z-[2000] top-0 w-4/5 bg-blackBackground h-screen overflow-y-auto shadow-md animate-slide-in'>
           <div className='absolute w-full flex justify-between items-center p-2'>
-            <div className='text-primary text-2xl font-semibold font-mono'>
-              Guard Enforcement
-            </div>
+            <div className='text-primary text-2xl font-semibold font-mono'></div>
             <AiFillCloseCircle
               fontSize={30}
               className='cursor-pointer text-secondary'
@@ -42,7 +40,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               }
               onClick={() => handleCloseSidebar()}
             >
-              <HiHome fontSize={26} className='text-primary' />
+              <HiHome fontSize={20} className='text-primary' />
               HOME
             </NavLink>
             <NavLink
@@ -52,7 +50,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               }
               onClick={() => handleCloseSidebar()}
             >
-              <ImOffice fontSize={26} className='text-primary' />
+              <ImOffice fontSize={20} className='text-primary' />
               OUR COMPANY
             </NavLink>
             <NavLink
@@ -62,7 +60,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               }
               onClick={() => handleCloseSidebar()}
             >
-              <HiOfficeBuilding fontSize={26} className='text-primary' />
+              <HiOfficeBuilding fontSize={20} className='text-primary' />
               GUARD ENFORCEMENT USA
             </NavLink>
             <NavLink
@@ -72,7 +70,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               }
               onClick={() => handleCloseSidebar()}
             >
-              <HiOfficeBuilding fontSize={26} className='text-primary' />
+              <HiOfficeBuilding fontSize={20} className='text-primary' />
               GUARD ENFORCEMENT NIGERIA
             </NavLink>
             <NavLink
@@ -82,7 +80,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               }
               onClick={() => handleCloseSidebar()}
             >
-              <MdMiscellaneousServices fontSize={26} className='text-primary' />
+              <MdMiscellaneousServices fontSize={20} className='text-primary' />
               SERVICES
             </NavLink>
             <NavLink
@@ -92,7 +90,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               }
               onClick={() => handleCloseSidebar()}
             >
-              <AiOutlineTeam fontSize={26} className='text-primary' />
+              <AiOutlineTeam fontSize={20} className='text-primary' />
               CAREERS
             </NavLink>
             <NavLink
@@ -102,7 +100,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               }
               onClick={() => handleCloseSidebar()}
             >
-              <MdOutlineContacts fontSize={26} className='text-primary' />
+              <MdOutlineContacts fontSize={20} className='text-primary' />
               CONTACT
             </NavLink>
             <NavLink
@@ -112,7 +110,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               }
               onClick={() => handleCloseSidebar()}
             >
-              <AiOutlineLogin fontSize={26} className='text-primary' />
+              <AiOutlineLogin fontSize={20} className='text-primary' />
               LOG IN
             </NavLink>
           </div>
