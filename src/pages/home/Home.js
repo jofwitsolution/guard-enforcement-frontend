@@ -1,5 +1,11 @@
 import React from 'react';
-import { SectionOne, SectionTwo, SectionThree } from './components';
+import {
+  SectionOne,
+  SectionTwo,
+  SectionThree,
+  SectionFour,
+  SectionFive,
+} from './components';
 
 const home = () => {
   return (
@@ -7,6 +13,8 @@ const home = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
+      <SectionFive />
     </div>
   );
 };

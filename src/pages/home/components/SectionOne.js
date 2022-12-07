@@ -6,7 +6,7 @@ import styles from '../../../styles/tailwind';
 
 const SectionOne = () => {
   return (
-    <section className={`${styles.heroHome} text-white`}>
+    <section className={`${styles.heroHome} text-white landscape:h-screen`}>
       <div className='max-w-[1200px] h-full mx-auto px-[17px] md:px-[35px] flex items-center'>
         <div className='w-[100%] lg:w-[60%]'>
           <p className='mb-5'>

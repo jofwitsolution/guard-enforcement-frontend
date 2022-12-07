@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useCountUp } from 'react-countup';
 
@@ -8,13 +8,14 @@ import { images } from '../../../constants/images';
 import styles from '../../../styles/tailwind';
 
 const SectionThree = () => {
+  const [countOnce, setCountOnce] = useState(true);
+
   const awardRef = useRef(null);
   const { start: startAwardCount } = useCountUp({
     ref: awardRef,
     start: 0,
     end: 14,
     duration: 2,
-    enableScrollSpy: true,
     scrollSpyOnce: true,
   });
 
@@ -24,7 +25,6 @@ const SectionThree = () => {
     start: 0,
     end: 2,
     duration: 2,
-    enableScrollSpy: true,
     scrollSpyOnce: true,
   });
 
@@ -34,7 +34,6 @@ const SectionThree = () => {
     start: 0,
     end: 100,
     duration: 2,
-    enableScrollSpy: true,
     scrollSpyOnce: true,
   });
 
@@ -44,9 +43,19 @@ const SectionThree = () => {
     start: 0,
     end: 2000,
     duration: 2,
-    enableScrollSpy: true,
     scrollSpyOnce: true,
   });
+
+  const startCounters = () => {
+    if (countOnce) {
+      startAgentCount();
+      startClientCount();
+      startCountryCount();
+      startAwardCount();
+    }
+
+    setCountOnce(false);
+  };
 
   return (
     <section className='py-[2rem] md:py-[2rem]'>
@@ -98,7 +107,10 @@ const SectionThree = () => {
             </div>
           </div>
         </div>
-        <motion.div className='my-[3rem] md:my-[6rem] flex flex-col sm:flex-row justify-between items-center gap-8 sm:gap-5'>
+        <motion.div
+          onViewportEnter={startCounters}
+          className='my-[3rem] md:my-[6rem] flex flex-col sm:flex-row justify-between items-center gap-8 sm:gap-5'
+        >
           <motion.div className='flex flex-col items-center'>
             <span className={`${styles.headerTwoBlack} mb-0`}>
               <span

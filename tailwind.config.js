@@ -65,11 +65,15 @@ module.exports = {
         primaryBackground: '#f75757',
         primaryBackgroundAlt: '#f52626',
         blackBackground: 'rgb(34, 35, 40)',
+        secondaryBackground: '#f5f8f9',
         grayBackground: '#919194',
       },
       backgroundImage: {
         'hero-home':
           "linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)), url('/src/assets/images/ge-hero-home.jpeg')",
+        'home-sect-four': "url('/src/assets/images/ge-hero-home.jpeg')",
+        footer:
+          "linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)), url('/src/assets/images/ge-2.jpg')",
       },
       keyframes: {
         'slide-in': {

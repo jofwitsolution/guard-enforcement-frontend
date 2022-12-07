@@ -1,0 +1,65 @@
+
+.cs-slideshow {
+  margin: auto;
+  width: 100%;
+  // aspect-ratio: calc(16 / 16);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cs-btn {
+  padding: 16px;
+  font-size: 18px;
+  width: 64px;
+  aspect-ratio: 1;
+  border-radius: 32px;
+  background-color: rgba(15, 12, 41, .2);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 475px) {
+  .cs-btn {
+    background-color: none;
+    width: 40px;
+    padding: 10px;
+  }
+}
+
+.cs-btn:hover {
+  background-color: #24243e;
+}
+
+.cs-prevBtn {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cs-nextBtn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  height: 100%;
+//   object-fit: cover;
+//   object-position: center;
+}
