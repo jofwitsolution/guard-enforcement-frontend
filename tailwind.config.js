@@ -72,6 +72,7 @@ module.exports = {
         'hero-home':
           "linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)), url('/src/assets/images/ge-hero-home.jpeg')",
         'home-sect-four': "url('/src/assets/images/ge-hero-home.jpeg')",
+        'hero-services': "url('/src/assets/images/ge-hero-services.jpg')",
         footer:
           "linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)), url('/src/assets/images/ge-2.jpg')",
       },

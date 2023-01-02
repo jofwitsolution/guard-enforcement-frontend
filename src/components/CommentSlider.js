@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
 
@@ -26,10 +26,10 @@ const images = [
 
 function CommentSlider() {
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
+  // const [direction, setDirection] = useState(0);
 
   function nextStep() {
-    setDirection(1);
+    // setDirection(1);
     if (index === images.length - 1) {
       setIndex(0);
       return;
@@ -38,7 +38,7 @@ function CommentSlider() {
   }
 
   function prevStep() {
-    setDirection(-1);
+    // setDirection(-1);
     if (index === 0) {
       setIndex(images.length - 1);
       return;

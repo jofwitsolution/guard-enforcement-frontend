@@ -81,7 +81,7 @@ const Navbar = ({ setToggleSidebar }) => {
             >
               ABOUT <BiChevronDown fontSize={20} />
             </NavLink>
-            <div className='hidden group-hover:block absolute top-5 -left-5 text-black bg-white w-[200px]'>
+            <div className='hidden group-hover:block absolute top-5 -left-5 text-black bg-white w-[200px] z-[2000]'>
               <div>
                 <NavLink
                   className='inline-block w-full py-3 pl-3 hover:bg-primaryBackground hover:text-white transition-all duration-300 ease-in-out'

@@ -71,7 +71,7 @@ const Footer = () => {
               </a>
             </li>
             <li className='mb-2'>
-              <a href='/support' className='text-black hover:text-primary'>
+              <a href='/contact' className='text-black hover:text-primary'>
                 Support
               </a>
             </li>
@@ -88,29 +88,29 @@ const Footer = () => {
           </h4>
           <ul className='text-[0.8rem] md:text-[1rem]'>
             <li className='mb-2'>
-              <a
-                href='/terms-and-conditions'
-                className='text-black hover:text-primary'
-              >
+              <a href='/our-company' className='text-black hover:text-primary'>
                 About
               </a>
             </li>
             <li className='mb-2'>
-              <a
-                href='/privacy-policy'
-                className='text-black hover:text-primary'
-              >
+              <a href='/services' className='text-black hover:text-primary'>
                 Services
               </a>
             </li>
             <li className='mb-2'>
-              <a href='/support' className='text-black hover:text-primary'>
-                Blog
+              <a
+                href='/guardenforcement-nigeria'
+                className='text-black hover:text-primary'
+              >
+                Nigeria
               </a>
             </li>
             <li className='mb-2'>
-              <a href='/faq' className='text-black hover:text-primary'>
-                Contact
+              <a
+                href='/guardenforcement-usa'
+                className='text-black hover:text-primary'
+              >
+                USA
               </a>
             </li>
           </ul>

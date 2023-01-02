@@ -72,9 +72,11 @@ const SectionThree = () => {
             <span className={`${styles.headerTwoPrimary} inline-block mb-4`}>
               Who we are
             </span>
-            <h2 className={`${styles.headerTwoBlack}`}>
+            <h2
+              className={`text-blackText xxs:text-[1.2rem] xs:text-[1.4rem] sm:text-[1.8rem] md:text-[2rem] leading-[1.2] font-bold mb-8`}
+            >
               {' '}
-              We are a dynamic team of creative people
+              We are not any run-of-the-mill security outfit
             </h2>
             <div className='flex items-start gap-5'>
               <div>
@@ -86,21 +88,23 @@ const SectionThree = () => {
                   Solution Provider
                 </h3>
                 <p>
-                  We are a <strong>reliable</strong> security company that
-                  provides various security services that utilize safety first
-                  approach. Our Services include:
+                  We are an indigenious private security company with tentacles
+                  in the United States of America.
                 </p>
-                <ul className='list-disc mt-2 font-semibold'>
+                {/* <ul className='list-disc mt-2 font-semibold'>
                   <li>PROVISION OF SECURITY OFFICERS</li>
                   <li>SECURITY CAMERA MOUNTING AND MONITORING</li>
                   <li>24hours VEHICLE PATROL and CUSTOMER SERVICES</li>
-                </ul>
+                </ul> */}
+                <p>
+                  Our parent company, Guard Enforcement Security and Patrol, USA
+                  has had vast and deep experience in providing security
+                  solutions to individuals and organizations in the American
+                  landscape for upward of 15 years.
+                </p>
                 <div className='mt-5'>
-                  <a
-                    href='/pricing'
-                    className={`${styles.buttonOne} text-white`}
-                  >
-                    GET STARTED
+                  <a href='/about' className={`${styles.buttonOne} text-white`}>
+                    Learn more
                   </a>
                 </div>
               </div>

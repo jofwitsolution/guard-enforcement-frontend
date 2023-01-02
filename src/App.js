@@ -7,7 +7,7 @@ import {
   NotFound,
   TopProgressBar,
 } from './components';
-import { About, Home } from './pages';
+import { About, Home, Services } from './pages';
 
 import './styles/App.scss';
 
@@ -25,7 +25,8 @@ function App() {
 
       <main>
         <Routers>
-          <Route path='/about-us' element={<About />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/about' element={<About />} />
           <Route path='/' element={<Home />} />
           <Route path='*' element={<NotFound />} />
         </Routers>
