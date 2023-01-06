@@ -26,7 +26,6 @@ const SectionFour = () => {
             </span>
           </div>
           <div className='flex items-center'>
-            <GiSmartphone fontSize={30} className='text-primary mr-2' />{' '}
             <span className='font-bold md:text-[1.5rem] text-blackText'>
               +234 (813) 117-4459
             </span>

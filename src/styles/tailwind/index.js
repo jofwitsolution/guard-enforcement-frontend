@@ -21,7 +21,7 @@ const styles = {
   headerFourBlack:
     'text-blackText xxs:text-[1rem] xs:text-[1.4rem] sm:text-[1.6rem] md:text-[2rem] leading-[1.2] font-bold mb-8',
   headerTwoPrimary:
-    'text-primary xxs:text-[1.2rem] xs:text-[1.4rem] sm:text-[1.8rem] md:text-[2rem] leading-[1.2] font-bold mb-8',
+    'text-primary xxs:text-[1.2rem] xs:text-[1.4rem] sm:text-[1.8rem] md:text-[2rem] leading-[1.2] font-bold mb-4 md:mb-8',
   headerThreeBlack:
     'text-blackText xs:text-[1.1rem] sm:text-[1.2rem] md:text-[1.3rem] leading-[1.2] font-bold mb-2',
   headerThreeWhite:

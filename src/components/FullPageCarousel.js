@@ -42,10 +42,13 @@ const FullPageCarousel = () => {
         className='h-[40vh] md:h-screen landscape:h-screen fullpage-carousel__item fullpage-carousel__item-1'
       >
         <div className='text-white w-[96%] md:w-[70%] lg:w-[55%] mx-auto flex flex-col items-start'>
-          <span className={`${styles.headerThreeWhite}`}>
-            Your Safety is Our Priority
+          <span
+            className={`text-[2rem] md:text-[4rem] leading-[1.2] font-bold mb-8`}
+          >
+            Your Safety <br />
+            is Our Priority
           </span>
-          <span className=''>
+          <span className='hidden md:inline'>
             Security cultivates situational awareness and maintains balance.
             Without security, individuals often become complacent and miss
             unusual behavior of civilians, employees and others around them.
@@ -59,10 +62,11 @@ const FullPageCarousel = () => {
         className='fullpage-carousel__item fullpage-carousel__item-2 h-[40vh] md:h-screen landscape:h-screen'
       >
         <div className='text-white w-[96%] md:w-[70%] lg:w-[55%] mx-auto flex flex-col items-start'>
-          <span className={`${styles.headerThreeWhite}`}>
-            Your Safety is Our Priority
+          <span className={`${styles.heroHeading}`}>
+            Your Safety <br />
+            is Our Priority
           </span>
-          <span className=''>
+          <span className='hidden md:inline'>
             Security officers offer a physical visual deterrent from crime. The
             presence of even one officer will dramatically reduce the rates of
             crime and prevent the likelihood of an assailant inflicting harm.
@@ -76,10 +80,11 @@ const FullPageCarousel = () => {
         className='fullpage-carousel__item fullpage-carousel__item-3 h-[40vh] md:h-screen landscape:h-screen'
       >
         <div className='text-white w-[96%] md:w-[70%] lg:w-[55%] mx-auto flex flex-col items-start'>
-          <span className={`${styles.headerThreeWhite}`}>
-            Your Safety is Our Priority
+          <span className={`${styles.heroHeading}`}>
+            Your Safety <br />
+            is Our Priority
           </span>
-          <span className=''>
+          <span className='hidden md:inline'>
             The reaction of security is immediate; every second counts when it
             comes to incident response. It is paramount that the threat is
             discovered and remediated as quickly as possible. Security is

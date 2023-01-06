@@ -18,12 +18,14 @@ const SectionSix = () => {
               alt='guard enforcement 3'
               whileInView={{ opacity: [0, 1], y: [-50, 0] }}
               transition={{ duration: 1, type: 'tween' }}
+              viewport={{ once: true }}
               className=''
             />
           </div>
           <motion.div
             whileInView={{ opacity: [0, 1], y: [50, 0] }}
             transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
             className='flex-1 md:p-4 mt-8 md:mt-0'
           >
             <a href='/guardenforcement-usa'>
@@ -54,6 +56,7 @@ const SectionSix = () => {
           <motion.div
             whileInView={{ opacity: [0, 1], y: [50, 0] }}
             transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
             className='flex-1 md:pr-4 mt-8 md:mt-0'
           >
             <a href='/guardenforcement-nigeria'>
@@ -87,6 +90,7 @@ const SectionSix = () => {
               alt='guard enforcement 3'
               whileInView={{ opacity: [0, 1], y: [-50, 0] }}
               transition={{ duration: 1, type: 'tween' }}
+              viewport={{ once: true }}
               className=''
             />
           </div>
