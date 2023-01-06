@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { BsArrowRightSquareFill } from 'react-icons/bs';
 
 import { images } from '../../../constants/images';
@@ -12,9 +13,19 @@ const SectionSix = () => {
       >
         <div className='flex flex-col md:flex-row items-center'>
           <div className='flex-1'>
-            <img src={images.ge5} alt='guard enforcement 3' className='' />
+            <motion.img
+              src={images.ge5}
+              alt='guard enforcement 3'
+              whileInView={{ opacity: [0, 1], y: [-50, 0] }}
+              transition={{ duration: 1, type: 'tween' }}
+              className=''
+            />
           </div>
-          <div className='flex-1 md:p-4 mt-8 md:mt-0'>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            className='flex-1 md:p-4 mt-8 md:mt-0'
+          >
             <a href='/guardenforcement-usa'>
               <div className={`${styles.headerTwoPrimary} text-center`}>
                 Guard Enforcement USA
@@ -37,10 +48,14 @@ const SectionSix = () => {
                 </span>
               </div>
             </a>
-          </div>
+          </motion.div>
         </div>
         <div className='flex flex-col md:flex-row items-center'>
-          <div className='flex-1 md:pr-4 mt-8 md:mt-0'>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            className='flex-1 md:pr-4 mt-8 md:mt-0'
+          >
             <a href='/guardenforcement-nigeria'>
               <div className={`${styles.headerTwoPrimary} text-center`}>
                 Guard Enforcement Nigeria
@@ -65,9 +80,15 @@ const SectionSix = () => {
                 </span>
               </div>
             </a>
-          </div>
+          </motion.div>
           <div className='flex-1 order-[-1] md:order-1 mt-8 md:mt-0'>
-            <img src={images.ge3} alt='guard enforcement 3' className='' />
+            <motion.img
+              src={images.ge3}
+              alt='guard enforcement 3'
+              whileInView={{ opacity: [0, 1], y: [-50, 0] }}
+              transition={{ duration: 1, type: 'tween' }}
+              className=''
+            />
           </div>
         </div>
       </div>
