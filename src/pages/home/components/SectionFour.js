@@ -18,11 +18,19 @@ const SectionFour = () => {
         <p className='md:text-[1.2rem] mb-2'>
           Need Security Officers? For Immediate Support:
         </p>
-        <div className='flex items-center'>
-          <GiSmartphone fontSize={30} className='text-primary mr-2' />{' '}
-          <span className='font-bold md:text-[1.5rem] text-blackText'>
-            +1 (510) 706-1906
-          </span>
+        <div>
+          <div className='flex items-center'>
+            <GiSmartphone fontSize={30} className='text-primary mr-2' />{' '}
+            <span className='font-bold md:text-[1.5rem] text-blackText'>
+              +1 (510) 706-1906
+            </span>
+          </div>
+          <div className='flex items-center'>
+            <GiSmartphone fontSize={30} className='text-primary mr-2' />{' '}
+            <span className='font-bold md:text-[1.5rem] text-blackText'>
+              +234 (813) 117-4459
+            </span>
+          </div>
         </div>
       </div>
     </section>

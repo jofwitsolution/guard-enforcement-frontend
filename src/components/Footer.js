@@ -161,6 +161,14 @@ const Footer = () => {
                 +1 (510) 706-1906
               </a>
             </li>
+            <li className='mb-2'>
+              <a
+                href='tel: +234 (813) 117-4459'
+                className='text-primary hover:underline'
+              >
+                +234 (813) 117-4459
+              </a>
+            </li>
           </ul>
         </div>
       </div>

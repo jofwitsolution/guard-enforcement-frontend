@@ -6,6 +6,7 @@ import { FiMonitor } from 'react-icons/fi';
 import { Ri24HoursFill } from 'react-icons/ri';
 
 import styles from '../../../styles/tailwind';
+import { Link } from 'react-router-dom';
 
 const SectionTwo = () => {
   return (
@@ -31,7 +32,7 @@ const SectionTwo = () => {
           >
             <GiSecurityGate fontSize={55} className='text-primary mb-4' />
             <h3 className={`${styles.headerThreeBlack}`}>
-              Provision of Security Officers
+              Man guiding and Security Assessment
             </h3>
             <p className=''>
               We provide experienced and trained security officers to keep our
@@ -45,7 +46,7 @@ const SectionTwo = () => {
           >
             <FiMonitor fontSize={55} className='text-primary mb-4' />
             <h3 className={`${styles.headerThreeBlack}`}>
-              Security Camera Mounting and Monitoring
+              Surveillance and Alarm System Installation
             </h3>
             <p className=''>
               We provide our clients with security cameras to enable them
@@ -59,13 +60,21 @@ const SectionTwo = () => {
           >
             <Ri24HoursFill fontSize={55} className='text-primary mb-4' />
             <h3 className={`${styles.headerThreeBlack}`}>
-              24hrs Vehicle Patrol and Customer Services
+              Crowd Control and Event Management
             </h3>
             <p className=''>
               We provide 24hrs vehicle patrol to keep our clients safe, and we
               also provide customer services in case of any problem.
             </p>
           </motion.div>
+        </div>
+        <div>
+          <a
+            href='/services'
+            className='inline-block border-primary hover:border-b-4 mt-5 transition-all duration-[0.4s] ease-out'
+          >
+            <span>Know more...</span>
+          </a>
         </div>
       </div>
     </section>

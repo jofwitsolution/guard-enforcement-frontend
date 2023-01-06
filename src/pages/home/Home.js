@@ -5,6 +5,7 @@ import {
   SectionThree,
   SectionFour,
   SectionFive,
+  SectionSix,
 } from './components';
 
 const home = () => {
@@ -13,6 +14,7 @@ const home = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionSix />
       <SectionFour />
       <SectionFive />
     </div>
