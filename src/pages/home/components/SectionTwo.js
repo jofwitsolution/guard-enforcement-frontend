@@ -6,7 +6,6 @@ import { FiMonitor } from 'react-icons/fi';
 import { Ri24HoursFill } from 'react-icons/ri';
 
 import styles from '../../../styles/tailwind';
-import { Link } from 'react-router-dom';
 
 const SectionTwo = () => {
   return (
