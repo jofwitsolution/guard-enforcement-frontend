@@ -6,7 +6,7 @@ const SectionTwo = () => {
     <section className='py-[4rem] md:py-[10rem]'>
       <div className={`${styles.maxWidth}`}>
         <div>
-          <span className={`${styles.headerTwoBlack} font-sans`}>
+          <span className={`${styles.headerTwoBlack} font-normal font-sans`}>
             &ldquo; At Guard Enforcement, we pride ourselves on providing
             top-quality security solutions to individuals and organizations in
             the United States and Nigeria. With over 15 years of experience in
