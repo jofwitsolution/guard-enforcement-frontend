@@ -3,8 +3,8 @@ import React, { useRef, useEffect } from 'react';
 
 const FullPageCarousel = () => {
   const item_1 = useRef();
-  const item_2 = useRef();
-  const item_3 = useRef();
+  // const item_2 = useRef();
+  // const item_3 = useRef();
 
   const carouselItems = [item_1];
 
