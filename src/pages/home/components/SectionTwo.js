@@ -9,7 +9,7 @@ import styles from '../../../styles/tailwind';
 
 const SectionTwo = () => {
   return (
-    <section className='py-[2rem] md:py-[6rem]'>
+    <section className='pt-[2rem] md:py-[6rem]'>
       <div className={`${styles.maxWidth}`}>
         <div className='w-[100%] lg:w-[65%] mb-[3rem] md:mb-[4rem]'>
           <p className='text-primary mb-5'>
@@ -55,7 +55,7 @@ const SectionTwo = () => {
           <motion.div
             whileInView={{ opacity: [0, 1], y: [50, 0] }}
             transition={{ duration: 1, type: 'tween' }}
-            className='xxs:mb-5 sm:mb-10 md:mb-0'
+            className='xxs:mb-2 sm:mb-10 md:mb-0'
           >
             <Ri24HoursFill fontSize={55} className='text-primary mb-4' />
             <h3 className={`${styles.headerThreeBlack}`}>
@@ -70,7 +70,7 @@ const SectionTwo = () => {
         <div>
           <a
             href='/services'
-            className='inline-block border-primary hover:border-b-4 mt-5 transition-all duration-[0.4s] ease-out'
+            className='inline-block border-primary text-primary hover:border-b-4 md:mt-5 transition-all duration-[0.4s] ease-out'
           >
             <span>Know more...</span>
           </a>

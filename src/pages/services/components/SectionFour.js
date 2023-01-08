@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import { images } from '../../../constants/images';
 import styles from '../../../styles/tailwind';
@@ -46,7 +47,7 @@ const SectionFour = () => {
               <div className='mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0'>
                 {callouts.map((callout) => (
                   <div key={callout.name} className='group relative'>
-                    <div className='relative w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 max-h-64'>
+                    <div className='relative w-full overflow-hidden sm:rounded-lg bg-white group-hover:opacity-75 max-h-64'>
                       <img
                         src={callout.imageSrc}
                         alt={callout.imageAlt}
@@ -68,6 +69,27 @@ const SectionFour = () => {
             </div>
           </div>
         </div>
+        <motion.div
+          whileInView={{ opacity: [0, 1], x: [200, 0] }}
+          transition={{ duration: 1, type: 'tween' }}
+          className='w-[90%] md:w-[70%] bg-primary py-5 px-4 sm:px-10'
+        >
+          <div className='text-white text-[1.5rem] sm:text-[2rem] leading-[1.2]'>
+            Thank you for considering Guard Enforcement for your security needs
+          </div>
+
+          <motion.a
+            initial={{ opacity: 0, visibility: 'hidden' }}
+            whileInView={{ opacity: [0, 1], visibility: 'visible' }}
+            transition={{ delay: 1, duration: 1, type: 'tween' }}
+            href='/contact'
+          >
+            <p className='text-white mt-2'>
+              Contact us today to learn more about our services and how we can
+              help protect you and your business.
+            </p>
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );

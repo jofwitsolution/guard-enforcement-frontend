@@ -26,7 +26,7 @@ const SectionThree = () => {
         <div className='flex flex-col md:flex-row gap-8 justify-between items-start'>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <FiMonitor className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <FiMonitor className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>
@@ -41,7 +41,7 @@ const SectionThree = () => {
           </div>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <GiSecurityGate className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <GiSecurityGate className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>
@@ -55,7 +55,7 @@ const SectionThree = () => {
           </div>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <AiFillCar className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <AiFillCar className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>
@@ -68,7 +68,7 @@ const SectionThree = () => {
         <div className='flex flex-col md:flex-row gap-8 justify-between items-start mt-10'>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <MdEvent className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <MdEvent className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>
@@ -84,7 +84,7 @@ const SectionThree = () => {
           </div>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <FaDog className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <FaDog className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>Security Dogs</h3>
@@ -95,7 +95,7 @@ const SectionThree = () => {
           </div>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <GiArtificialIntelligence className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <GiArtificialIntelligence className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>
@@ -112,7 +112,7 @@ const SectionThree = () => {
         <div className='flex flex-col md:flex-row gap-8 justify-between items-start mt-10'>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <AiFillCustomerService className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <AiFillCustomerService className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>
@@ -128,7 +128,7 @@ const SectionThree = () => {
           </div>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <GrThreats className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <GrThreats className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>
@@ -144,7 +144,7 @@ const SectionThree = () => {
           </div>
           <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
             <div>
-              <GiJourney className='xxs:text-[30px] xs:text-[40px] sm:text-[55px]' />
+              <GiJourney className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
             <div>
               <h3 className={`${styles.headerThreeBlack}`}>
