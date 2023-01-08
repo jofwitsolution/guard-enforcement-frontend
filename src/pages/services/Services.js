@@ -1,11 +1,18 @@
 import React from 'react';
-import { SectionOne, SectionTwo } from './components';
+import {
+  SectionFour,
+  SectionOne,
+  SectionThree,
+  SectionTwo,
+} from './components';
 
 const Services = () => {
   return (
     <div>
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
+      <SectionFour />
     </div>
   );
 };

@@ -14,6 +14,8 @@ const styles = {
   // heading
   heroHeading:
     'xxs:text-[1.2rem] xs:text-[1.6rem] sm:text-[2rem] md:text-[4rem] leading-[1.2] font-bold mb-8',
+  heroHeadingTwo:
+    'text-[2rem] md:text-[4rem] text-start leading-[1.2] font-bold md:mb-8',
   headerTwoBlack:
     'text-blackText xxs:text-[1.2rem] xs:text-[1.4rem] sm:text-[1.8rem] md:text-[2.5rem] leading-[1.2] font-bold mb-8',
   headerTwoWhite:
