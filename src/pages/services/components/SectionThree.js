@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import styles from '../../../styles/tailwind';
 import { FiMonitor } from 'react-icons/fi';
 import {
@@ -24,7 +26,12 @@ const SectionThree = () => {
           </span>
         </div>
         <div className='flex flex-col md:flex-row gap-8 justify-between items-start'>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <FiMonitor className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -38,8 +45,13 @@ const SectionThree = () => {
                 user-friendly and easy to operate.
               </p>
             </div>
-          </div>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <GiSecurityGate className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -52,8 +64,13 @@ const SectionThree = () => {
                 clients safe
               </p>
             </div>
-          </div>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <AiFillCar className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -63,10 +80,15 @@ const SectionThree = () => {
               </h3>
               <p>We provide 24hrs vehicle patrol to keep our clients safe</p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className='flex flex-col md:flex-row gap-8 justify-between items-start mt-10'>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <MdEvent className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -81,8 +103,13 @@ const SectionThree = () => {
                 ensure a smooth and safe event.
               </p>
             </div>
-          </div>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <FaDog className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -92,8 +119,13 @@ const SectionThree = () => {
                 We provide well trained security dogs to keep our clients safe
               </p>
             </div>
-          </div>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <GiArtificialIntelligence className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -107,10 +139,15 @@ const SectionThree = () => {
                 efficiently
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className='flex flex-col md:flex-row gap-8 justify-between items-start mt-10'>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <AiFillCustomerService className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -125,8 +162,13 @@ const SectionThree = () => {
                 customized security model to meet your unique needs.
               </p>
             </div>
-          </div>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <GrThreats className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -141,8 +183,13 @@ const SectionThree = () => {
                 a personal protection agent, we have you covered.
               </p>
             </div>
-          </div>
-          <div className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'>
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='flex items-start gap-5 xxs:w-[92%] sm:w-[80%]'
+          >
             <div>
               <GiJourney className='xxs:text-[30px] xs:text-[40px] sm:text-[55px] text-primary' />
             </div>
@@ -157,7 +204,7 @@ const SectionThree = () => {
                 and on-the-ground support.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

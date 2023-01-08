@@ -27,43 +27,48 @@ const SectionTwo = () => {
           <motion.div
             whileInView={{ opacity: [0, 1], y: [50, 0] }}
             transition={{ duration: 1, type: 'tween' }}
-            className='xxs:mb-5 sm:mb-10 md:mb-0'
+            className='flex-1 xxs:mb-5 sm:mb-10 md:mb-0'
           >
             <GiSecurityGate fontSize={55} className='text-primary mb-4' />
             <h3 className={`${styles.headerThreeBlack}`}>
               Man guiding and Security Assessment
             </h3>
             <p className=''>
-              We provide experienced and trained security officers to keep our
-              clients safe.
+              Our team of highly trained security professionals is ready to
+              protect you and your property from any potential threats. Whether
+              you need a security guard for your business or event, or a
+              personal protection agent, we have you covered.
             </p>
           </motion.div>
           <motion.div
             whileInView={{ opacity: [0, 1], y: [50, 0] }}
             transition={{ duration: 1, type: 'tween' }}
-            className='xxs:mb-5 sm:mb-10 md:mb-0'
+            className='flex-1 xxs:mb-5 sm:mb-10 md:mb-0'
           >
             <FiMonitor fontSize={55} className='text-primary mb-4' />
             <h3 className={`${styles.headerThreeBlack}`}>
               Surveillance and Alarm System Installation
             </h3>
             <p className=''>
-              We provide our clients with security cameras to enable them
-              monitor events in realtime.
+              We offer a range of surveillance and alarm systems to help protect
+              your property and assets. Our systems are designed to be
+              user-friendly and easy to operate.
             </p>
           </motion.div>
           <motion.div
             whileInView={{ opacity: [0, 1], y: [50, 0] }}
             transition={{ duration: 1, type: 'tween' }}
-            className='xxs:mb-2 sm:mb-10 md:mb-0'
+            className='flex-1 xxs:mb-2 sm:mb-10 md:mb-0'
           >
             <Ri24HoursFill fontSize={55} className='text-primary mb-4' />
             <h3 className={`${styles.headerThreeBlack}`}>
               Crowd Control and Event Management
             </h3>
             <p className=''>
-              We provide 24hrs vehicle patrol to keep our clients safe, and we
-              also provide customer services in case of any problem.
+              Our team is skilled in managing crowds and ensuring the safety of
+              attendees at events of all sizes. We can provide security
+              personnel, crowd control barriers, and other equipment to help
+              ensure a smooth and safe event.
             </p>
           </motion.div>
         </div>
