@@ -43,7 +43,7 @@ const FullPageCarousel = () => {
       >
         <div className='text-white md:w-[70%] lg:w-[55%] mx-auto px-4 flex flex-col items-start justify-items-end'>
           <span
-            className={`text-[2rem] md:text-[4rem] text-center md:text-start leading-[1.2] font-bold md:mb-8`}
+            className={`text-[2rem] md:text-[4rem] text-start leading-[1.2] font-bold md:mb-8`}
           >
             Your Safety is Our Priority
           </span>
