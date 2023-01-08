@@ -1,19 +1,19 @@
 import React, { useRef, useEffect } from 'react';
-import styles from './../styles/tailwind/index';
+// import styles from './../styles/tailwind/index';
 
 const FullPageCarousel = () => {
   const item_1 = useRef();
   const item_2 = useRef();
   const item_3 = useRef();
 
-  const carouselItems = [item_1, item_2, item_3];
+  const carouselItems = [item_1];
 
   let intervalId = 0;
   let count = 0;
 
   function playCarousel() {
     for (let i = 0; i < carouselItems.length; i++) {
-      if (count === i) {
+      if (true) {
         carouselItems[i].current.style.opacity = '1';
         carouselItems[i].current.style.transform = 'scale(1)';
         continue;
@@ -41,12 +41,11 @@ const FullPageCarousel = () => {
         ref={item_1}
         className='h-[40vh] md:h-screen landscape:h-screen fullpage-carousel__item fullpage-carousel__item-1'
       >
-        <div className='text-white w-[96%] md:w-[70%] lg:w-[55%] mx-auto flex flex-col items-start'>
+        <div className='text-white md:w-[70%] lg:w-[55%] mx-auto px-4 flex flex-col items-start justify-items-end'>
           <span
-            className={`text-[2rem] md:text-[4rem] leading-[1.2] font-bold mb-8`}
+            className={`text-[2rem] md:text-[4rem] text-center md:text-start leading-[1.2] font-bold md:mb-8`}
           >
-            Your Safety <br />
-            is Our Priority
+            Your Safety is Our Priority
           </span>
           <span className='hidden md:inline'>
             Security cultivates situational awareness and maintains balance.
@@ -57,14 +56,15 @@ const FullPageCarousel = () => {
           </span>
         </div>
       </div>
-      <div
+      {/* <div
         ref={item_2}
         className='fullpage-carousel__item fullpage-carousel__item-2 h-[40vh] md:h-screen landscape:h-screen'
       >
         <div className='text-white w-[96%] md:w-[70%] lg:w-[55%] mx-auto flex flex-col items-start'>
-          <span className={`${styles.heroHeading}`}>
-            Your Safety <br />
-            is Our Priority
+          <span
+            className={`text-[2rem] md:text-[4rem] leading-[1.2] font-bold md:mb-8`}
+          >
+            Your Safety is Our Priority
           </span>
           <span className='hidden md:inline'>
             Security officers offer a physical visual deterrent from crime. The
@@ -80,9 +80,10 @@ const FullPageCarousel = () => {
         className='fullpage-carousel__item fullpage-carousel__item-3 h-[40vh] md:h-screen landscape:h-screen'
       >
         <div className='text-white w-[96%] md:w-[70%] lg:w-[55%] mx-auto flex flex-col items-start'>
-          <span className={`${styles.heroHeading}`}>
-            Your Safety <br />
-            is Our Priority
+          <span
+            className={`text-[2rem] md:text-[4rem] leading-[1.2] font-bold md:mb-8`}
+          >
+            Your Safety is Our Priority
           </span>
           <span className='hidden md:inline'>
             The reaction of security is immediate; every second counts when it
@@ -92,7 +93,7 @@ const FullPageCarousel = () => {
             of the police or emergency medical services.
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
