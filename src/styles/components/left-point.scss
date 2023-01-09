@@ -1,0 +1,13 @@
+.left-point {
+    width: 200px;
+    height: 120px;
+
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.left-arrow {
+    width: 200px;
+    height: 120px;
+
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}

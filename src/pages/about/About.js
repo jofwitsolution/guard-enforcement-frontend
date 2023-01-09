@@ -1,10 +1,12 @@
 import React from 'react';
-import { SectionOne } from './components';
+import { SectionOne, SectionThree, SectionTwo } from './components';
 
 const About = () => {
   return (
     <div>
       <SectionOne />
+      <SectionTwo />
+      <SectionThree />
     </div>
   );
 };
