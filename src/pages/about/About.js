@@ -1,7 +1,12 @@
 import React from 'react';
+import { SectionOne } from './components';
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <SectionOne />
+    </div>
+  );
 };
 
 export default About;
