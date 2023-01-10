@@ -84,14 +84,14 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               SERVICES
             </NavLink>
             <NavLink
-              to='/careers'
+              to='/recruitments'
               className={({ isActive }) =>
                 isActive ? `${activeStyle}` : `${notActiveStyle}`
               }
               onClick={() => handleCloseSidebar()}
             >
               <AiOutlineTeam fontSize={20} className='text-primary' />
-              CAREERS
+              RECRUITMENTS
             </NavLink>
             <NavLink
               to='/contact'

@@ -1,5 +1,10 @@
 import React from 'react';
-import { SectionOne, SectionThree, SectionTwo } from './components';
+import {
+  SectionFour,
+  SectionOne,
+  SectionThree,
+  SectionTwo,
+} from './components';
 
 const About = () => {
   return (
@@ -7,6 +12,7 @@ const About = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
     </div>
   );
 };

@@ -128,12 +128,12 @@ const Navbar = ({ setToggleSidebar }) => {
           </div>
           <div className=''>
             <NavLink
-              to='/careers'
+              to='/recruitments'
               className={({ isActive }) =>
                 isActive ? 'text-primary' : 'hover:text-primary'
               }
             >
-              CAREERS
+              RECRUITMENTS
             </NavLink>
           </div>
           <div className=''>

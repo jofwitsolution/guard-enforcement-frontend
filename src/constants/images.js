@@ -8,6 +8,7 @@ import ge8 from '../assets/images/ge-8.jpg';
 import den from '../assets/images/den.jpeg';
 import farm from '../assets/images/farm.png';
 import des from '../assets/images/des.png';
+import CEO from '../assets/images/CEO.jpeg';
 
 export const images = {
   geHeroHome,
@@ -20,4 +21,5 @@ export const images = {
   den,
   farm,
   des,
+  CEO,
 };
