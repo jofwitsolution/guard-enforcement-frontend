@@ -7,10 +7,12 @@ import {
   SectionFive,
   SectionSix,
 } from './components';
+import Meta from '../../components/Meta';
 
 const home = () => {
   return (
     <div>
+      <Meta title={'Guard Enforcement'} />
       <SectionOne />
       <SectionTwo />
       <SectionThree />

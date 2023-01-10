@@ -5,6 +5,7 @@ import ge5 from '../assets/images/ge-5.jpeg';
 import ge6 from '../assets/images/ge-6.jpeg';
 import ge7 from '../assets/images/ge-7.jpg';
 import ge8 from '../assets/images/ge-8.jpg';
+import ge9 from '../assets/images/ge-9.jpeg';
 import den from '../assets/images/den.jpeg';
 import farm from '../assets/images/farm.png';
 import des from '../assets/images/des.png';
@@ -18,6 +19,7 @@ export const images = {
   ge6,
   ge7,
   ge8,
+  ge9,
   den,
   farm,
   des,

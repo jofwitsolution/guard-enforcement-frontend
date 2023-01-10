@@ -10,7 +10,7 @@ const SectionOne = () => {
       <div className={`${styles.maxWidth}`}>
         <div className='flex flex-col lg:flex-row items-center'>
           <div className='flex-[70%]'>
-            <p className='mb-5 text-primary'>Get to know about us</p>
+            <p className='mb-5 text-primary'>We are recruiting</p>
 
             <motion.h1
               whileInView={{ opacity: [0, 1], visibility: 'visible' }}
@@ -18,12 +18,16 @@ const SectionOne = () => {
               viewport={{ once: true }}
               className={`${styles.heroHeading} mb-4`}
             >
-              Guard Enforcement has the experience and resources to keep you
-              safe
+              Protect and Serve with the best, become part of the Guard
+              Enforcement team
             </motion.h1>
           </div>
           <div className='mb-4 md:mb-0'>
-            <img src={images.ge7} alt='Guard Enforcement' />
+            <img
+              src={images.ge9}
+              alt='Guard Enforcement'
+              className='shadow-lg'
+            />
           </div>
         </div>
       </div>
