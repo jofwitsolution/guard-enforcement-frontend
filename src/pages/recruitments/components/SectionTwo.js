@@ -77,34 +77,36 @@ const SectionTwo = () => {
             </div>
           </motion.div>
         </div>
-        <motion.div
-          initial={{ visibility: 'hidden', opacity: 0 }}
-          whileInView={{
-            opacity: [0, 1],
-            visibility: 'visible',
-          }}
-          transition={{ duration: 1, type: 'tween' }}
-          className='w-max mx-auto mt-10 md:mt-20'
-        >
-          <div className='flex gap-4 mb-4'>
-            <div>
-              <BsFillCheckCircleFill className='text-[1.6rem] text-primary' />
+        <div className='flex flex-col items-center'>
+          <motion.div
+            initial={{ visibility: 'hidden', opacity: 0 }}
+            whileInView={{
+              opacity: [0, 1],
+              visibility: 'visible',
+            }}
+            transition={{ duration: 1, type: 'tween' }}
+            className='mt-10 md:mt-20'
+          >
+            <div className='flex items-center gap-4 mb-4'>
+              <div>
+                <BsFillCheckCircleFill className='text-[1.3rem] md:text-[1.6rem] text-primary' />
+              </div>
+              <div>Security guards</div>
             </div>
-            <div>Security guards</div>
-          </div>
-          <div className='flex gap-4 mb-4'>
-            <div>
-              <BsFillCheckCircleFill className='text-[1.6rem] text-primary' />
+            <div className='flex items-center gap-4 mb-4'>
+              <div>
+                <BsFillCheckCircleFill className='text-[1.3rem] md:text-[1.6rem] text-primary' />
+              </div>
+              <div>Crowd control and event management specialists</div>
             </div>
-            <div>Crowd control and event management specialists</div>
-          </div>
-          <div className='flex gap-4 mb-4'>
-            <div>
-              <BsFillCheckCircleFill className='text-[1.6rem] text-primary' />
+            <div className='flex items-center gap-4 mb-4'>
+              <div>
+                <BsFillCheckCircleFill className='text-[1.3rem] md:text-[1.6rem] text-primary' />
+              </div>
+              <div>Surveillance and alarm system installation technicians</div>
             </div>
-            <div>Surveillance and alarm system installation technicians</div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

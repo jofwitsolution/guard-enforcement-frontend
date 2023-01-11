@@ -4,6 +4,7 @@ import { RiRegisteredFill } from 'react-icons/ri';
 
 import { images } from '../../../constants/images';
 import styles from '../../../styles/tailwind';
+import { BsBoxArrowInRight } from 'react-icons/bs';
 
 const SectionFour = () => {
   return (
@@ -46,9 +47,9 @@ const SectionFour = () => {
 
         <div className='flex flex-col md:flex-row justify-center gap-5 mt-9 md:mt-20'>
           <div className='md:w-[40%] lg:w-[30%]'>
-            <div className='shadow-xl bg-primary text-white flex gap-5 py-5 p-4'>
+            <div className='shadow-xl bg-primary text-white flex gap-2 md:gap-5 py-5 px-2 md:px-4'>
               <div>
-                <RiRegisteredFill fontSize={60} />
+                <RiRegisteredFill className='text-[25px] md:text-[60px]' />
               </div>
               <div>
                 {' '}
@@ -71,10 +72,10 @@ const SectionFour = () => {
                 whileInView={{ opacity: [0, 1], y: [100, 0] }}
                 transition={{ duration: 1, type: 'tween' }}
                 viewport={{ once: true }}
-                className='shadow-xl bg-primary hover:bg-primaryAlt cursor-pointer text-white flex gap-5 py-5 p-4'
+                className='shadow-xl bg-primary hover:bg-primaryAlt cursor-pointer text-white flex gap-2 md:gap-5 py-5 px-2 md:px-4'
               >
                 <div>
-                  <RiRegisteredFill fontSize={60} />
+                  <RiRegisteredFill className='text-[25px] md:text-[60px]' />
                 </div>
                 <div>
                   {' '}
@@ -85,6 +86,9 @@ const SectionFour = () => {
                     Apply now and take the first step in a rewarding career with
                     a leading private security company.
                   </p>
+                  <div className=''>
+                    <BsBoxArrowInRight fontSize={30} />
+                  </div>
                 </div>
               </motion.div>
             </a>

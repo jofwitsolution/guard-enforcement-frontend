@@ -58,7 +58,9 @@ const Navbar = ({ setToggleSidebar }) => {
       </div>
 
       <div className='max-w-[1200px] mx-auto flex justify-between items-center px-[35px] text-white h-[80px] md:h-[90px]'>
-        <div className='text-xl'>Guard Enforcement</div>
+        <div className='text-xl'>
+          <a href='/'>Guard Enforcement</a>{' '}
+        </div>
         <div className='hidden lg:flex justify-center gap-8 items-center text-white'>
           <div className=''>
             <NavLink
