@@ -176,7 +176,7 @@ const Footer = () => {
         <div>Copyright © 2020</div>
         <div className='flex gap-5'>
           <a
-            href='http://www.facebook.com'
+            href='https://www.facebook.com/profile.php?id=100088318370383&mibextid=LQQJ4d'
             className='text-blackText hover:text-primary'
             target={'-blank'}
             rel='noreferrer'
@@ -184,7 +184,7 @@ const Footer = () => {
             <FaFacebookF fontSize={18} />{' '}
           </a>
           <a
-            href='http://www.twitter.com'
+            href='https://twitter.com/gesp_ltd?s=21&t=4rs8Zonh98pLRGGpzFDwxA'
             className='text-blackText hover:text-primary'
             target={'-blank'}
             rel='noreferrer'
@@ -192,7 +192,7 @@ const Footer = () => {
             <FaTwitter fontSize={18} />{' '}
           </a>
           <a
-            href='http://www.instagram.com'
+            href='https://instagram.com/gesp_ltd?igshid=YmMyMTA2M2Y='
             className='text-blackText hover:text-primary'
             target={'-blank'}
             rel='noreferrer'

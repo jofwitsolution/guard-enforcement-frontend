@@ -12,7 +12,7 @@ const Navbar = ({ setToggleSidebar }) => {
         <div className='max-w-[1200px] mx-auto flex justify-between items-center px-[35px] h-[55px]'>
           <div className='flex gap-5'>
             <a
-              href='http://www.facebook.com'
+              href='https://www.facebook.com/profile.php?id=100088318370383&mibextid=LQQJ4d'
               className='text-gray hover:text-primary'
               target={'-blank'}
               rel='noreferrer'
@@ -20,7 +20,7 @@ const Navbar = ({ setToggleSidebar }) => {
               <FaFacebookF fontSize={18} />{' '}
             </a>
             <a
-              href='http://www.twitter.com'
+              href='https://twitter.com/gesp_ltd?s=21&t=4rs8Zonh98pLRGGpzFDwxA'
               className='text-gray hover:text-primary'
               target={'-blank'}
               rel='noreferrer'
@@ -28,7 +28,7 @@ const Navbar = ({ setToggleSidebar }) => {
               <FaTwitter fontSize={18} />{' '}
             </a>
             <a
-              href='http://www.instagram.com'
+              href='https://instagram.com/gesp_ltd?igshid=YmMyMTA2M2Y='
               className='text-gray hover:text-primary'
               target={'-blank'}
               rel='noreferrer'

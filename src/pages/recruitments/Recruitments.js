@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SectionOne, SectionTwo } from './components';
+import { SectionOne, SectionThree, SectionTwo } from './components';
 import Meta from '../../components/Meta';
 
 const Recruitments = () => {
@@ -9,6 +9,7 @@ const Recruitments = () => {
       <Meta title={'Recruitments - Guard Enforcement'} />
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
     </div>
   );
 };
