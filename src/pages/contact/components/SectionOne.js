@@ -13,7 +13,14 @@ const SectionOne = () => {
         </div>
         <div className='flex flex-col lg:flex-row items-center gap-4 md:gap-10'>
           <div className='mb-4 md:mb-0'>
-            <img src={images.ge12} alt='Guard Enforcement' className='' />
+            <motion.img
+              whileInView={{ opacity: [0, 1], x: [-100, 0] }}
+              transition={{ duration: 1, type: 'tween' }}
+              viewport={{ once: true }}
+              src={images.ge12}
+              alt='Guard Enforcement'
+              className=''
+            />
           </div>
           <div className=''>
             <p className='mb-5 text-primary'>For all enquiries</p>
