@@ -31,7 +31,9 @@ const SectionThree = () => {
 
           <div className='ml-5 mt-5'>
             <ul className='list-disc'>
-              <li>Education: SSCE/Diploma/Bachelors degree/any equivalent </li>
+              <li>
+                Education: SSCE/NCE/OND/HND/Bachelor's degree/any equivalent
+              </li>
               <li>
                 Applicant must have two guarantor; a Clergy person and Police
                 statement
