@@ -8,13 +8,9 @@ const SectionThree = () => {
   return (
     <section className='py-[2rem] md:py-[5rem]'>
       <div className={`${styles.maxWidth}`}>
-        <div className='flex flex-col md:flex-row gap-8 items-center justify-center'>
+        <div className='bg-secondaryBackground flex flex-col md:flex-row gap-8 items-center justify-start shadow-lg p-5 md:p-0'>
           <div className=''>
-            <img
-              src={images.ge11}
-              alt='Guard Enforcement'
-              className='border-4 border-primary rounded-tl-[5rem] rounded-br-[5rem] shadow-lg'
-            />
+            <img src={images.ge11} alt='Guard Enforcement' className='' />
           </div>
           <div className='md:w-[50%]'>
             <p>
@@ -28,10 +24,70 @@ const SectionThree = () => {
           </div>
         </div>
         <div className='mt-10'>
-          <p>The following are the application requirements:</p>
+          <p>
+            For the position of security guard, the following are the
+            application requirements:
+          </p>
+
+          <div className='ml-5 mt-5'>
+            <ul className='list-disc'>
+              <li>Education: SSCE/Diploma/Bachelors degree/any equivalent </li>
+              <li>
+                Applicant must have two guarantor; a Clergy person and Police
+                statement
+              </li>
+              <li>Minimum height of 5ft and maximum weight of 90kg</li>
+            </ul>
+          </div>
+          <div className='flex items-center my-5'>
+            click{' '}
+            <Link to='/apply' className={`${styles.buttonOne} mx-2 text-white`}>
+              Apply Now
+            </Link>{' '}
+            to apply
+          </div>
+
+          <p>
+            Other positions should send their CV to
+            recruitment@guardenforcement.com. Qualified applicants will be
+            contacted after their CV has been reviewed by our recruitment team.
+          </p>
 
           <div className='my-5'>
-            <Link to='/contact'>Contact us for recruitment enquires.</Link>
+            For recruitment enquiries contact;
+            <div>
+              WhatsApp:{' '}
+              <a
+                href='https://wa.me/2348137192766'
+                target={'_blank'}
+                rel='noreferrer'
+                className='text-primary hover:text-primaryAlt'
+              >
+                +2348137192766
+              </a>
+            </div>
+            <div>
+              WhatsApp:{' '}
+              <a
+                href='https://wa.me/2348077050852'
+                target={'_blank'}
+                rel='noreferrer'
+                className='text-primary hover:text-primaryAlt'
+              >
+                +2348077050852
+              </a>
+            </div>
+            <div>
+              Email:{' '}
+              <a
+                href='mailto: info@guardenforcement.com'
+                target={'_blank'}
+                rel='noreferrer'
+                className='text-primary hover:text-primaryAlt'
+              >
+                info@guardenforcement.com
+              </a>
+            </div>
           </div>
         </div>
       </div>

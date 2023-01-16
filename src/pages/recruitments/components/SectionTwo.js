@@ -105,6 +105,12 @@ const SectionTwo = () => {
               </div>
               <div>Surveillance and alarm system installation technicians</div>
             </div>
+            <div className='flex items-center gap-4 mb-4'>
+              <div>
+                <BsFillCheckCircleFill className='text-[1.3rem] md:text-[1.6rem] text-primary' />
+              </div>
+              <div>Experienced marketer</div>
+            </div>
           </motion.div>
         </div>
       </div>

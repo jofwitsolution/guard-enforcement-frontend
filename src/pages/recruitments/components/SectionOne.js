@@ -23,11 +23,7 @@ const SectionOne = () => {
             </motion.h1>
           </div>
           <div className='mb-4 md:mb-0'>
-            <img
-              src={images.ge9}
-              alt='Guard Enforcement'
-              className='shadow-lg'
-            />
+            <img src={images.ge9} alt='Guard Enforcement' className='' />
           </div>
         </div>
       </div>
