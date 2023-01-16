@@ -8,7 +8,7 @@ const SectionThree = () => {
   return (
     <section className='py-[2rem] md:py-[5rem]'>
       <div className={`${styles.maxWidth}`}>
-        <div className='bg-secondaryBackground flex flex-col md:flex-row gap-8 items-center justify-start shadow-lg p-5 md:p-0'>
+        <div className=' flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-start shadow-lg p-5 md:p-0'>
           <div className=''>
             <img src={images.ge11} alt='Guard Enforcement' className='' />
           </div>

@@ -85,7 +85,7 @@ const SectionTwo = () => {
               visibility: 'visible',
             }}
             transition={{ duration: 1, type: 'tween' }}
-            className='mt-10 md:mt-20'
+            className='mt-10 md:mt-20 w-[90%] sm:w-[initial]'
           >
             <div className='flex items-center gap-4 mb-4'>
               <div>
