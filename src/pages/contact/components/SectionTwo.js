@@ -6,7 +6,7 @@ import NigeriaMap from '../../../components/NigeriaMap';
 
 const SectionTwo = () => {
   return (
-    <section className='pb-2 md:pb-[6rem]'>
+    <section className='pb-2 md:pb-[3rem]'>
       <div className={`${styles.maxWidth}`}>
         <div className='flex flex-col md:flex-row gap-8 md:gap-8 items-center'>
           <div className='flex-[50%] shadow-xl rounded-xl p-4'>
