@@ -41,6 +41,10 @@ const SectionThree = () => {
                 +234 (813) 117-4459
               </a>
             </p>
+            <p className='mt-4'>
+              Our customer service is always available to respond to all
+              enquiries.
+            </p>
           </div>
         </div>
       </div>
