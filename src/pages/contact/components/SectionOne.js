@@ -12,16 +12,19 @@ const SectionOne = () => {
           <h1 className='font-bold text-[1.5rem]'>Contact Us</h1>
         </div>
         <div className='flex flex-col lg:flex-row items-center gap-4 md:gap-10'>
-          <div className='mb-4 md:mb-0'>
-            <motion.img
-              whileInView={{ opacity: [0, 1], x: [-100, 0] }}
-              transition={{ duration: 1, type: 'tween' }}
-              viewport={{ once: true }}
-              src={images.ge12}
-              alt='Guard Enforcement'
-              className=''
-            />
-          </div>
+          <motion.div
+            initial={{ visibility: 'hidden' }}
+            whileInView={{
+              opacity: [0, 1],
+              x: [-100, 0],
+              visibility: 'visible',
+            }}
+            transition={{ duration: 1, type: 'tween' }}
+            viewport={{ once: true }}
+            className='mb-4 md:mb-0'
+          >
+            <img src={images.ge12} alt='Guard Enforcement' className='' />
+          </motion.div>
           <div className=''>
             <p className='mb-5 text-primary'>For all enquiries</p>
 

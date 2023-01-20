@@ -13,6 +13,7 @@ const SectionOne = () => {
             <p className='mb-5 text-primary'>We are recruiting</p>
 
             <motion.h1
+              initial={{ visibility: 'hidden' }}
               whileInView={{ opacity: [0, 1], visibility: 'visible' }}
               transition={{ duration: 2, type: 'tween' }}
               viewport={{ once: true }}
