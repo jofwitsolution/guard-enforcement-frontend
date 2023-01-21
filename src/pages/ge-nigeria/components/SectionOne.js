@@ -17,7 +17,7 @@ const SectionOne = () => {
         <div className='mx-auto px-4 mt-16'>
           <h2 className='text-center text-2xl font-medium mb-4'>Overview</h2>
           <p className='text-center text-gray-700'>
-            Guard Enforcement is a leading private security company based in the
+            Guard Enforcement is a leading private security company based in
             Nigeria. We provide a wide range of security solutions to
             individuals and organizations, and our goal is to provide the same
             standard of security services as obtainable in the USA and other

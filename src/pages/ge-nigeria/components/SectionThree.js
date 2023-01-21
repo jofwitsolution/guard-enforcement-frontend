@@ -80,13 +80,14 @@ const SectionThree = () => {
             <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
               <h3 className='text-lg font-medium'>Address</h3>
               <p className='text-gray-700'>
-                433 Callan Avenue Suite 200, San Leandro, Carlifornia 94577,
-                United State of America.
+                62, Totoro Road, Totoro, Abeokuta, Ogun State. Off. 1st Avenue,
+                Victory Estate, Opposite Crescent University, Adehun,
+                Abeokuta-Ayetoro Road, Abeokuta, Ogun State.
               </p>
             </div>
             <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
               <h3 className='text-lg font-medium'>Phone</h3>
-              <p className='text-gray-700'>(510) 706 1906</p>
+              <p className='text-gray-700'>(081) 6484 5232</p>
             </div>
             <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
               <h3 className='text-lg font-medium'>Email</h3>
