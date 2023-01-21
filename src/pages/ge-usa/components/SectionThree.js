@@ -73,28 +73,6 @@ const SectionThree = () => {
           </div>
         </div>
         <div className='mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
-          <h2 className='text-center text-2xl font-medium mb-4'>Careers</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-            {careers.map((career, index) => (
-              <div
-                key={index}
-                className='bg-white p-4 md:p-8 rounded-lg shadow-lg'
-              >
-                <h3 className='text-lg font-medium'>{career.title}</h3>
-                <p className='text-gray-700'>
-                  Responsibilities: {career.responsibilities}
-                </p>
-                <p className='text-gray-700'>
-                  Requirements: {career.requirements}
-                </p>
-                <button className='bg-primary text-white py-2 px-4 rounded-lg hover:bg-primaryAlt mt-2'>
-                  Apply Now
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className='mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
           <h2 className='text-center text-2xl font-medium mb-4'>
             Contact Information
           </h2>
@@ -114,6 +92,28 @@ const SectionThree = () => {
               <h3 className='text-lg font-medium'>Email</h3>
               <p className='text-gray-700'>info@guardenforcement.com</p>
             </div>
+          </div>
+        </div>
+        <div className='mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
+          <h2 className='text-center text-2xl font-medium mb-4'>Careers</h2>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            {careers.map((career, index) => (
+              <div
+                key={index}
+                className='bg-white p-4 md:p-8 rounded-lg shadow-lg'
+              >
+                <h3 className='text-lg font-medium'>{career.title}</h3>
+                <p className='text-gray-700'>
+                  Responsibilities: {career.responsibilities}
+                </p>
+                <p className='text-gray-700'>
+                  Requirements: {career.requirements}
+                </p>
+                <button className='bg-primary text-white py-2 px-4 rounded-lg hover:bg-primaryAlt mt-2'>
+                  Apply Now
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>
