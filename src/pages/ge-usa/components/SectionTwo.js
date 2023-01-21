@@ -30,7 +30,10 @@ const SectionTwo = () => {
           <h2 className='text-center text-2xl font-medium mb-4'>Our Team</h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             {team.map((member, index) => (
-              <div key={index} className='bg-white p-8 rounded-lg shadow-lg'>
+              <div
+                key={index}
+                className='bg-white p-4 md:p-8 rounded-lg shadow-lg'
+              >
                 <img
                   src={member.image}
                   className='w-full h-48 rounded-lg object-cover'
