@@ -13,7 +13,7 @@ const SectionOne = () => {
             Your trusted partner for professional security solutions
           </p>
         </div>
-        <div className='container mx-auto px-4 mt-16'>
+        <div className='mx-auto px-4 mt-16'>
           <h2 className='text-center text-2xl font-medium mb-4'>Overview</h2>
           <p className='text-center text-gray-700'>
             Guard Enforcement is a leading private security company based in the

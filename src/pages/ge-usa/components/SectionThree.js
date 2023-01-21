@@ -56,12 +56,12 @@ const SectionThree = () => {
   return (
     <section className='pb-2 pt-6 md:py-[3rem]'>
       <div className={`${styles.maxWidth}`}>
-        <div className='container mx-auto px-4'>
+        <div className='mx-auto px-4'>
           <h2 className='text-center text-2xl font-medium mb-4'>
             Testimonials
           </h2>
           <div className=''>
-            <div className='md:w-[80%] mx-auto bg-white p-8 rounded-lg shadow-lg'>
+            <div className='md:w-[80%] mx-auto bg-white p-4 md:p-8 rounded-lg shadow-lg'>
               <p className='text-gray-700 mb-4'>
                 "{testimonials[currentIndex].text}"
               </p>
@@ -72,11 +72,14 @@ const SectionThree = () => {
             </div>
           </div>
         </div>
-        <div className='container mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
+        <div className='mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
           <h2 className='text-center text-2xl font-medium mb-4'>Careers</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             {careers.map((career, index) => (
-              <div key={index} className='bg-white p-8 rounded-lg shadow-lg'>
+              <div
+                key={index}
+                className='bg-white p-4 md:p-8 rounded-lg shadow-lg'
+              >
                 <h3 className='text-lg font-medium'>{career.title}</h3>
                 <p className='text-gray-700'>
                   Responsibilities: {career.responsibilities}
@@ -91,23 +94,23 @@ const SectionThree = () => {
             ))}
           </div>
         </div>
-        <div className='container mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
+        <div className='mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
           <h2 className='text-center text-2xl font-medium mb-4'>
             Contact Information
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-            <div className='bg-white p-8 rounded-lg shadow-lg'>
+            <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
               <h3 className='text-lg font-medium'>Address</h3>
               <p className='text-gray-700'>
                 433 Callan Avenue Suite 200, San Leandro, Carlifornia 94577,
                 United State of America.
               </p>
             </div>
-            <div className='bg-white p-8 rounded-lg shadow-lg'>
+            <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
               <h3 className='text-lg font-medium'>Phone</h3>
               <p className='text-gray-700'>(510) 706 1906</p>
             </div>
-            <div className='bg-white p-8 rounded-lg shadow-lg'>
+            <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
               <h3 className='text-lg font-medium'>Email</h3>
               <p className='text-gray-700'>info@guardenforcement.com</p>
             </div>
