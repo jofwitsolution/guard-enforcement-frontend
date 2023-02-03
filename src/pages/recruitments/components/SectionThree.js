@@ -1,8 +1,6 @@
 import React from 'react';
-
 import { images } from '../../../constants/images';
 import styles from '../../../styles/tailwind';
-import { Link } from 'react-router-dom';
 
 const SectionThree = () => {
   return (
@@ -43,9 +41,14 @@ const SectionThree = () => {
           </div>
           <div className='flex items-center my-5'>
             click{' '}
-            <Link to='/apply' className={`${styles.buttonOne} mx-2 text-white`}>
+            <a
+              href='https://forms.gle/C9Rx1ovrcStqS1vG8'
+              className={`${styles.buttonOne} mx-2 text-white`}
+              target={'_blank'}
+              rel={'noreferrer'}
+            >
               Apply Now
-            </Link>{' '}
+            </a>{' '}
             to apply
           </div>
 

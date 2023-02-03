@@ -1,4 +1,5 @@
 import geHeroHome from '../assets/images/ge-hero-home.jpeg';
+import geHeroHomeSmall from '../assets/images/ge-hero-home-small.jpeg';
 import ge1 from '../assets/images/ge-1.jpeg';
 import ge3 from '../assets/images/ge-3.jpeg';
 import ge5 from '../assets/images/ge-5.jpeg';
@@ -16,6 +17,7 @@ import CEO from '../assets/images/CEO.jpeg';
 
 export const images = {
   geHeroHome,
+  geHeroHomeSmall,
   ge1,
   ge3,
   ge5,
