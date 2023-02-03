@@ -3,7 +3,7 @@ import styles from '../../../styles/tailwind';
 
 const SectionFour = () => {
   return (
-    <section className='pb-2 pt-6 md:py-[3rem]'>
+    <section className='pb-2 pt-10 md:py-[3rem]'>
       <div className={`${styles.maxWidth}`}>
         <div className='container mx-auto'>
           {' '}

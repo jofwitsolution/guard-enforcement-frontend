@@ -24,7 +24,7 @@ const SectionTwo = () => {
   ]);
 
   return (
-    <section className='pb-2 pt-6 md:py-[3rem]'>
+    <section className='pb-2 pt-8 md:py-[3rem]'>
       <div className={`${styles.maxWidth}`}>
         <div className='mx-auto px-4'>
           <h2 className='text-center text-2xl font-medium mb-4'>Our Team</h2>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../../styles/tailwind';
+import { Link } from 'react-router-dom';
 
 const SectionThree = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -54,48 +55,32 @@ const SectionThree = () => {
   ]);
 
   return (
-    <section className='pb-2 pt-6 md:py-[3rem]'>
+    <section className='pb-2 pt-10 md:py-[3rem]'>
       <div className={`${styles.maxWidth}`}>
         <div className='mx-auto px-4'>
-          <h2 className='text-center text-2xl font-medium mb-4'>
-            Testimonials
-          </h2>
-          <div className=''>
-            <div className='md:w-[80%] mx-auto bg-white p-4 md:p-8 rounded-lg shadow-lg'>
-              <p className='text-gray-700 mb-4'>
-                "{testimonials[currentIndex].text}"
-              </p>
-              <p className='text-gray-700 font-medium'>
-                {testimonials[currentIndex].name} -{' '}
-                {testimonials[currentIndex].title}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className='mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
           <h2 className='text-center text-2xl font-medium mb-4'>
             Contact Information
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-            <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
+            <div className='bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white'>
               <h3 className='text-lg font-medium'>Address</h3>
-              <p className='text-gray-700'>
+              <p className=''>
                 62, Totoro Road, Totoro, Abeokuta, Ogun State. Off. 1st Avenue,
                 Victory Estate, Opposite Crescent University, Adehun,
                 Abeokuta-Ayetoro Road, Abeokuta, Ogun State.
               </p>
             </div>
-            <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
+            <div className='bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white'>
               <h3 className='text-lg font-medium'>Phone</h3>
-              <p className='text-gray-700'>(081) 6484 5232</p>
+              <p className=''>(081) 6484 5232</p>
             </div>
-            <div className='bg-white p-4 md:p-8 rounded-lg shadow-lg'>
+            <div className='bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white'>
               <h3 className='text-lg font-medium'>Email</h3>
-              <p className='text-gray-700'>info@guardenforcement.com</p>
+              <p className=''>info@guardenforcement.com</p>
             </div>
           </div>
         </div>
-        <div className='mx-auto px-4 mt-[2rem]  md:mt-[6rem]'>
+        <div className='mx-auto px-4 mt-[4rem]  md:mt-[6rem]'>
           <h2 className='text-center text-2xl font-medium mb-4'>Careers</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             {careers.map((career, index) => (
@@ -110,11 +95,30 @@ const SectionThree = () => {
                 <p className='text-gray-700'>
                   Requirements: {career.requirements}
                 </p>
-                <button className='bg-primary text-white py-2 px-4 rounded-lg hover:bg-primaryAlt mt-2'>
+                <Link
+                  to={'/recruitments'}
+                  className='inline-block bg-primary text-white py-2 px-4 rounded-lg hover:bg-primaryAlt mt-2'
+                >
                   Apply Now
-                </button>
+                </Link>
               </div>
             ))}
+          </div>
+        </div>
+        <div className='mx-auto px-4 mt-[4rem]  md:mt-[6rem]'>
+          <h2 className='text-center text-2xl font-medium mb-4'>
+            Testimonials
+          </h2>
+          <div className=''>
+            <div className='md:w-[60%] md:h-[300px] mx-auto bg-white p-4 md:p-8 rounded-lg shadow-lg'>
+              <p className='text-gray-700 mb-4'>
+                "{testimonials[currentIndex].text}"
+              </p>
+              <p className='text-gray-700 font-medium'>
+                {testimonials[currentIndex].name} -{' '}
+                {testimonials[currentIndex].title}
+              </p>
+            </div>
           </div>
         </div>
       </div>
