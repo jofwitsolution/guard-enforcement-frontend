@@ -19,12 +19,12 @@ const SectionOne = () => {
             <img
               src={images.geHeroHomeSmall}
               alt='Guard enforcement team'
-              className='rounded-md'
+              className=''
             />
           </div>
           <div className='flex-1'>
-            <h2 className='text-center text-2xl font-medium mb-4'>Overview</h2>
-            <p className='text-center text-gray-700'>
+            <h2 className='text-2xl font-medium mb-4'>Overview</h2>
+            <p className='text-gray-700'>
               Guard Enforcement is a leading private security company based in
               the United States. We provide a wide range of security solutions
               to individuals and organizations, and our goal is to have a

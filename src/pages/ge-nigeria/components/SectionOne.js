@@ -17,15 +17,11 @@ const SectionOne = () => {
         </div>
         <div className='flex flex-col md:flex-row gap-8 items-center  mt-16'>
           <div className='flex-1'>
-            <img
-              src={images.geHeroHomeSmall}
-              alt='Guard enforcement team'
-              className='rounded-md'
-            />
+            <img src={images.ge13} alt='Guard enforcement team' className='' />
           </div>
           <div className='flex-1'>
-            <h2 className='text-center text-2xl font-medium mb-4'>Overview</h2>
-            <p className='text-center text-gray-700'>
+            <h2 className='text-2xl font-medium mb-4'>Overview</h2>
+            <p className='text-gray-700'>
               Guard Enforcement is a leading private security company based in
               Nigeria. We provide a wide range of security solutions to
               individuals and organizations, and our goal is to provide the same
