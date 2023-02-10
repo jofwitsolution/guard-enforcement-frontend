@@ -5,29 +5,43 @@ import { Formik, Form } from 'formik';
 import { MyTextInput } from '../../components/forms';
 import RotatingLinesLoader from '../../components/loaders/RotatingLinesLoader';
 import { signupSchema } from '../../form-validation/validationSchemas';
+import { signup } from '../../services/userService';
+import { loginWithJwt } from '../../services/authService';
 
 const Signup = () => {
   const [error, setError] = useState('');
 
-  const handleSubmit = (values, isSubmitting) => {
-    console.log(values);
+  const handleSubmit = async (values, setSubmitting) => {
     setError('');
+
+    try {
+      const { data } = await signup(values);
+      setSubmitting(false);
+      loginWithJwt(data.token);
+      window.location.href = '/';
+    } catch (err) {
+      setSubmitting(false);
+      setError(err.response.data.message);
+    }
   };
 
   return (
     <div className={`${styles.maxWidth} py-[4rem] flex flex-col items-center`}>
-      <h1 className={`${styles.headerTwoBlack} text-center`}>
+      <h1
+        className={`text-[1.5rem] md:text-[2.5rem] font-bold text-blackText text-center`}
+      >
         Create a Guard Enforcement account
       </h1>
 
       <p className='mt-[2rem] text-center'>
-        Sign up with your names, email and a password.
+        Sign up with a unique identity number.
       </p>
       <div className='w-[100%] xs:w-[350px]'>
         <Formik
           initialValues={{
             firstName: '',
             lastName: '',
+            identityNumber: '',
             email: '',
             password: '',
           }}
@@ -52,6 +66,14 @@ const Signup = () => {
                 name='lastName'
                 type='text'
                 placeholder='Last Name'
+              />
+
+              <MyTextInput
+                className={styles.formInput}
+                label=''
+                name='identityNumber'
+                type='text'
+                placeholder='Identity Number'
               />
 
               <MyTextInput
@@ -85,13 +107,13 @@ const Signup = () => {
       </div>
       <p className='mt-[1.5rem] text-center'>
         Already have an account?{' '}
-        <Link href='/login' className='underline'>
+        <Link to='/login' className='underline'>
           Log in
         </Link>
       </p>
       <p className='mt-[6rem] text-center'>
-        By signing up for Jofwit Solution, you agree to our{' '}
-        <Link href='/terms-of-service' className='underline'>
+        By signing up for Guard Enforcement, you agree to our{' '}
+        <Link to='/terms-of-service' className='underline'>
           Terms of Service.
         </Link>
       </p>

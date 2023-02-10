@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Routes as Routers, Route } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import {
   Footer,
@@ -17,6 +18,7 @@ import {
   GeUsa,
   GeNigeria,
   Signup,
+  Login,
 } from './pages';
 
 import './styles/App.scss';
@@ -37,6 +39,7 @@ function App() {
       <main>
         <Routers>
           <Route path='/signup' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/guardenforcement-usa' element={<GeUsa />} />
           <Route path='/guardenforcement-nigeria' element={<GeNigeria />} />

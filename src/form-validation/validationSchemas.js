@@ -7,12 +7,15 @@ export const signupSchema = Yup.object({
   lastName: Yup.string()
     .max(20, 'Must be 50 characters or less')
     .required('The above field is required'),
+  identityNumber: Yup.string().required(
+    'You must provide a unique identity number'
+  ),
   email: Yup.string()
     .email('Invalid email address')
     .required('The above field is required'),
   password: Yup.string()
-    .min(8, 'Password must be between 8 to 16 characters')
-    .required('The above field is required'),
+    .min(8, 'Password must be between 10 to 16 characters')
+    .required('Password is required for signup'),
 });
 
 export const loginSchema = Yup.object({

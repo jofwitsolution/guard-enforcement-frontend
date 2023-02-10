@@ -12,7 +12,7 @@ const config = {
 
 export function signup(user) {
   return http.post(
-    apiEndpoint,
+    apiEndpoint + '/signup',
     {
       firstName: user.firstName,
       lastName: user.lastName,

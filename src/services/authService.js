@@ -10,7 +10,7 @@ const config = {
   },
 };
 
-export async function login(email, password) {
+export async function login({ email, password }) {
   const { data } = await http.post(apiEndPoint, { email, password }, config);
   localStorage.setItem(tokenKey, data.token);
 }

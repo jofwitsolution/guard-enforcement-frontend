@@ -13,18 +13,19 @@ const ContactForm = () => {
   const [successMessage, setSuccessMessage] = useState('');
 
   const handleSubmit = async (values, setSubmitting) => {
-    console.log(values);
+    setSuccessMessage('');
+    setError('');
+
     try {
-      const res = await receiveMessage(values);
-      console.log(res);
+      const { data } = await receiveMessage(values);
+      console.log(data?.message);
       setSubmitting(false);
       setSuccessMessage(
         'Your message was sent successfully. Please do not re-send this message, we will contact you soon'
       );
     } catch (err) {
-      console.log(err);
       setSubmitting(false);
-      setError(err.data?.message);
+      setError(err.response.data.message);
     }
   };
 
@@ -111,7 +112,7 @@ const ContactForm = () => {
               <p className='text-red-500 text-center mt-3'>{error}</p>
             ) : null}
             {successMessage ? (
-              <p className='text-red-500 text-center mt-3'>{successMessage}</p>
+              <p className='text-center mt-3'>{successMessage}</p>
             ) : null}
           </div>
         </Form>
