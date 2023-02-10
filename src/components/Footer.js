@@ -121,7 +121,7 @@ const Footer = () => {
           </h4>
           <p className='text-[0.8rem]'>
             Subscribe to get latest news
-            <br /> article and resources
+            <br /> about events and pricing
           </p>
           <div>
             <form onSubmit={(e) => handleSubmit(e)}>

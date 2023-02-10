@@ -13,7 +13,11 @@ const Meta = ({ title, description, keywords }) => {
 
 Meta.defaultProps = {
   title: 'Guard Enforcement',
-  description: `Founded in 2010, We are an indigenious private security company with tentacles in the United States of America. Guard Enforcement Security and Patrol is highly commited to protecting people and properties while providing complete peace of mind.  We are dedicated to keeping your people, properties and assets
+  description: `Founded in 2010, We are an indigenious private security 
+  company with tentacles in the United States of America. Guard Enforcement 
+  Security and Patrol is highly commited to protecting people and properties 
+  while providing complete peace of mind.  We are dedicated to keeping your people, 
+  properties and assets
     through deep understanding and mitigation of security risks.
     With our combined expertise and resource, we effectively deliver
     security services and solutions in a wide array of industries.`,

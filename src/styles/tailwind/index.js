@@ -33,6 +33,10 @@ const styles = {
     'flex items-center w-max bg-primary px-3 py-1 md:px-5 md:py-3 rounded-xl hover:bg-primaryAlt',
   buttonTwo:
     'flex items-center w-max bg-primary px-3 py-1 md:px-5 md:py-2 hover:bg-primaryAlt',
+  formInput:
+    'mt-3 w-full h-[40px] placeholder:font-semibold focus:outline-none p-2 bg-white border rounded-md focus:border-[3px] focus:border-blue-500',
+  formButton:
+    'w-full h-[40px] bg-primaryBackground hover:bg-blue-700 text-white font-semibold rounded-md active:bg-blue-500',
 };
 
 export default styles;

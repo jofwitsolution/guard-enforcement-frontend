@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Routes as Routers, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import {
   Footer,
   Navbar,
@@ -15,6 +16,7 @@ import {
   Contact,
   GeUsa,
   GeNigeria,
+  Signup,
 } from './pages';
 
 import './styles/App.scss';
@@ -26,6 +28,7 @@ function App() {
     <div className='app'>
       <TopProgressBar />
       <Navbar setToggleSidebar={setToggleSidebar} />
+      <ToastContainer />
       <Sidebar
         toggleSidebar={toggleSidebar}
         setToggleSidebar={setToggleSidebar}
@@ -33,6 +36,7 @@ function App() {
 
       <main>
         <Routers>
+          <Route path='/signup' element={<Signup />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/guardenforcement-usa' element={<GeUsa />} />
           <Route path='/guardenforcement-nigeria' element={<GeNigeria />} />
