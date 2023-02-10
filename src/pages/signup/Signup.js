@@ -11,6 +11,7 @@ const Signup = () => {
 
   const handleSubmit = (values, isSubmitting) => {
     console.log(values);
+    setError('');
   };
 
   return (
