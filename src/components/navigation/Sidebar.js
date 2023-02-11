@@ -51,6 +51,7 @@ const Sidebar = ({
               <HiHome fontSize={20} className='text-primary' />
               HOME
             </NavLink>
+            <hr />
             <NavLink
               to='/our-company'
               className={({ isActive }) =>
@@ -61,6 +62,7 @@ const Sidebar = ({
               <ImOffice fontSize={20} className='text-primary' />
               OUR COMPANY
             </NavLink>
+            <hr />
             <NavLink
               to='/guardenforcement-usa'
               className={({ isActive }) =>
@@ -71,6 +73,7 @@ const Sidebar = ({
               <HiOfficeBuilding fontSize={20} className='text-primary' />
               GE USA
             </NavLink>
+            <hr />
             <NavLink
               to='/guardenforcement-nigeria'
               className={({ isActive }) =>
@@ -81,6 +84,7 @@ const Sidebar = ({
               <HiOfficeBuilding fontSize={20} className='text-primary' />
               GE NIGERIA
             </NavLink>
+            <hr />
             <NavLink
               to='/services'
               className={({ isActive }) =>
@@ -91,6 +95,7 @@ const Sidebar = ({
               <MdMiscellaneousServices fontSize={20} className='text-primary' />
               SERVICES
             </NavLink>
+            <hr />
             <NavLink
               to='/recruitments'
               className={({ isActive }) =>
@@ -101,6 +106,7 @@ const Sidebar = ({
               <AiOutlineTeam fontSize={20} className='text-primary' />
               RECRUITMENTS
             </NavLink>
+            <hr />
             <NavLink
               to='/contact'
               className={({ isActive }) =>
@@ -111,17 +117,21 @@ const Sidebar = ({
               <MdOutlineContacts fontSize={20} className='text-primary' />
               CONTACT
             </NavLink>
+            <hr />
             {!user && (
-              <NavLink
-                to='/login'
-                className={({ isActive }) =>
-                  isActive ? `${activeStyle}` : `${notActiveStyle}`
-                }
-                onClick={() => handleCloseSidebar()}
-              >
-                <AiOutlineLogin fontSize={20} className='text-primary' />
-                LOG IN
-              </NavLink>
+              <>
+                <NavLink
+                  to='/login'
+                  className={({ isActive }) =>
+                    isActive ? `${activeStyle}` : `${notActiveStyle}`
+                  }
+                  onClick={() => handleCloseSidebar()}
+                >
+                  <AiOutlineLogin fontSize={20} className='text-primary' />
+                  LOG IN
+                </NavLink>
+                <hr />
+              </>
             )}
 
             {user && (
@@ -136,6 +146,7 @@ const Sidebar = ({
                   <FaUserCircle fontSize={20} className='text-primary' />
                   USER
                 </span>
+                <hr />
 
                 <a
                   href='/'
@@ -148,6 +159,7 @@ const Sidebar = ({
                   <AiOutlineLogout fontSize={20} className='text-primary' />
                   SIGN OUT
                 </a>
+                <hr />
               </>
             )}
           </div>
