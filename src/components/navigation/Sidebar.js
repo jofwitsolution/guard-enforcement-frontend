@@ -2,19 +2,27 @@ import React from 'react';
 import {
   AiFillCloseCircle,
   AiOutlineTeam,
+  AiOutlineLogout,
   AiOutlineLogin,
 } from 'react-icons/ai';
 import { NavLink } from 'react-router-dom';
 import { HiHome, HiOfficeBuilding } from 'react-icons/hi';
 import { MdMiscellaneousServices, MdOutlineContacts } from 'react-icons/md';
 import { ImOffice } from 'react-icons/im';
+import { FaUserCircle } from 'react-icons/fa';
+import auth from '../../services/authService';
 
 const activeStyle =
   'px-5 flex items-center gap-3 font-semibold hover:text-primary border-r-4 border-white  transition-all duration-200 ease-in-out capitalize';
 const notActiveStyle =
   'px-5 flex items-center gap-3 font-semibold hover:text-primary transition-all duration-200 ease-in-out capitalize';
 
-const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
+const Sidebar = ({
+  toggleSidebar,
+  setToggleSidebar,
+  setToggleMobileMenu,
+  user,
+}) => {
   const handleCloseSidebar = () => {
     if (toggleSidebar) setToggleSidebar(false);
   };
@@ -61,7 +69,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               onClick={() => handleCloseSidebar()}
             >
               <HiOfficeBuilding fontSize={20} className='text-primary' />
-              GUARD ENFORCEMENT USA
+              GE USA
             </NavLink>
             <NavLink
               to='/guardenforcement-nigeria'
@@ -71,7 +79,7 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               onClick={() => handleCloseSidebar()}
             >
               <HiOfficeBuilding fontSize={20} className='text-primary' />
-              GUARD ENFORCEMENT NIGERIA
+              GE NIGERIA
             </NavLink>
             <NavLink
               to='/services'
@@ -103,16 +111,45 @@ const Sidebar = ({ toggleSidebar, setToggleSidebar }) => {
               <MdOutlineContacts fontSize={20} className='text-primary' />
               CONTACT
             </NavLink>
-            <NavLink
-              to='/login'
-              className={({ isActive }) =>
-                isActive ? `${activeStyle}` : `${notActiveStyle}`
-              }
-              onClick={() => handleCloseSidebar()}
-            >
-              <AiOutlineLogin fontSize={20} className='text-primary' />
-              LOG IN
-            </NavLink>
+            {!user && (
+              <NavLink
+                to='/login'
+                className={({ isActive }) =>
+                  isActive ? `${activeStyle}` : `${notActiveStyle}`
+                }
+                onClick={() => handleCloseSidebar()}
+              >
+                <AiOutlineLogin fontSize={20} className='text-primary' />
+                LOG IN
+              </NavLink>
+            )}
+
+            {user && (
+              <>
+                <span
+                  className={`${notActiveStyle}`}
+                  onClick={() => {
+                    handleCloseSidebar();
+                    setToggleMobileMenu(true);
+                  }}
+                >
+                  <FaUserCircle fontSize={20} className='text-primary' />
+                  USER
+                </span>
+
+                <a
+                  href='/'
+                  className={`${notActiveStyle}`}
+                  onClick={() => {
+                    handleCloseSidebar();
+                    auth.logout();
+                  }}
+                >
+                  <AiOutlineLogout fontSize={20} className='text-primary' />
+                  SIGN OUT
+                </a>
+              </>
+            )}
           </div>
         </div>
       )}

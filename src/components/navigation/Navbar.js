@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaEnvelope, FaFacebookF, FaTwitter } from 'react-icons/fa';
+import {
+  FaEnvelope,
+  FaFacebookF,
+  FaTwitter,
+  FaUserCircle,
+} from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { BiChevronDown } from 'react-icons/bi';
 import { HiMenu } from 'react-icons/hi';
+import UserMenu from './UserMenu';
 
-const Navbar = ({ setToggleSidebar }) => {
+const Navbar = ({ setToggleSidebar, user }) => {
+  const userIconRef = useRef(null);
+
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <nav className='bg-blackBackground'>
       <div className='hidden md:block border-b-[rgba(255,255,255,.1)] border-b-[0.1px]'>
@@ -148,17 +162,37 @@ const Navbar = ({ setToggleSidebar }) => {
               CONTACT
             </NavLink>
           </div>
-          <div className=''>
-            <NavLink
-              to='/login'
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-primary'
-                  : 'border-2 border-primary rounded-xl px-4 py-2 transition-all duration-300 ease-in-out hover:bg-primaryBackground'
-              }
-            >
-              LOG IN
-            </NavLink>
+          <div className='relative'>
+            {!user && (
+              <NavLink
+                to='/login'
+                className={({ isActive }) =>
+                  isActive
+                    ? 'text-primary'
+                    : 'border-2 border-primary rounded-xl px-4 py-2 transition-all duration-300 ease-in-out hover:bg-primaryBackground'
+                }
+              >
+                LOG IN
+              </NavLink>
+            )}
+            {user && (
+              <>
+                <span
+                  ref={userIconRef}
+                  onClick={() => setShowMenu(!showMenu)}
+                  className='text-[30px] text-primary hover:text-white cursor-pointer'
+                >
+                  <FaUserCircle />
+                </span>
+                {showMenu && (
+                  <UserMenu
+                    handleShowMenu={handleShowMenu}
+                    userIconRef={userIconRef}
+                    user={user}
+                  />
+                )}
+              </>
+            )}
           </div>
         </div>
         <div className='flex lg:hidden'>

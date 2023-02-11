@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from '../../styles/tailwind';
 import { Formik, Form } from 'formik';
 import { MyTextInput } from '../../components/forms';
 import RotatingLinesLoader from '../../components/loaders/RotatingLinesLoader';
 import { loginSchema } from '../../form-validation/validationSchemas';
-import { login } from '../../services/authService';
+import auth from '../../services/authService';
 
 const Login = () => {
+  const navigate = useNavigate();
   const [error, setError] = useState('');
 
   const handleSubmit = async (values, setSubmitting) => {
     setError('');
 
     try {
-      await login(values);
+      await auth.login(values);
       setSubmitting(false);
       window.location.href = '/';
     } catch (err) {
@@ -22,6 +23,10 @@ const Login = () => {
       setError(err.response.data.message);
     }
   };
+
+  useEffect(() => {
+    if (auth.getCurrentUser()) navigate('/dashboard');
+  }, [navigate]);
 
   return (
     <div className={`${styles.maxWidth} py-[4rem] flex flex-col items-center`}>
