@@ -73,7 +73,6 @@ const UserMobileMenu = ({ toggleMobileMenu, setToggleMobileMenu }) => {
               <AiOutlineLogout fontSize={20} className='text-primary' />
               SIGN OUT
             </a>
-            <hr />
           </div>
         </div>
       )}

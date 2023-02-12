@@ -159,7 +159,6 @@ const Sidebar = ({
                   <AiOutlineLogout fontSize={20} className='text-primary' />
                   SIGN OUT
                 </a>
-                <hr />
               </>
             )}
           </div>
