@@ -25,7 +25,7 @@ const SectionTwo = () => {
                 Who We Are
               </span>
               <p>
-                Founded in 2010, We are an indigenious private security company
+                Founded in 2003, We are an indigenious private security company
                 with tentacles in the United States of America. Guard
                 Enforcement Security and Patrol is highly commited to protecting
                 people and properties while providing complete peace of mind
@@ -39,7 +39,7 @@ const SectionTwo = () => {
               viewport={{ once: true }}
               className='left-point bg-primary text-white flex items-center justify-center'
             >
-              <span className='text-white z-50 text-[3rem]'>2010</span>{' '}
+              <span className='text-white z-50 text-[3rem]'>2003</span>{' '}
             </motion.div>
           </div>
         </div>
