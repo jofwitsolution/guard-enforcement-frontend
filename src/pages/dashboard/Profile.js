@@ -23,7 +23,7 @@ const Profile = ({ user }) => {
   const fullName = `${userProfile?.profile?.lastName} ${userProfile?.profile?.firstName}`;
   return (
     <div className='w-full'>
-      <div className='h-[140px] bg-gray rounded-t-lg'></div>
+      <div className='h-[140px] bg-primary rounded-t-lg'></div>
       <div className=' bg-white rounded-b-lg shadow-md px-4'>
         <span className='inline-block text-[100px] md:text-[130px] rounded-[50%] bg-white p-1 mt-[-32px] md:mt-[-42px] ml-[3%]'>
           <FaUserCircle />
