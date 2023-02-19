@@ -20,7 +20,6 @@ const Profile = ({ user }) => {
     createdAt: '',
     updatedAt: '',
   });
-
   const [userProfileLoading, setUserProfileLoading] = useState(true);
 
   useEffect(() => {
@@ -34,7 +33,6 @@ const Profile = ({ user }) => {
         setUserProfileLoading(false);
       } catch (error) {
         // console.error(error);
-        setUserProfileLoading(false);
       }
     };
 
@@ -75,7 +73,7 @@ const Profile = ({ user }) => {
             <span className={`${styles.buttonFour}`}>Save</span>
           </div>
         </div>
-        <div className='grid place-content-center mt-5 md:mt-10'>
+        <div className='sm:grid sm:place-content-center mt-5 md:mt-10'>
           <div className=''>
             <div className='flex flex-col sm:flex-row gap-4 sm:gap-6 mb-4'>
               <div className=''>
@@ -86,7 +84,7 @@ const Profile = ({ user }) => {
                   type='text'
                   name='firstName'
                   value={userProfile.firstName}
-                  className='bg-secondaryBackground border-black border-[1px] rounded pl-2 py-1'
+                  className='bg-secondaryBackground border-black border rounded pl-2 py-1 w-full sm:w-[normal]'
                   onChange={(e) => handleChange(e)}
                 />
               </div>
@@ -98,7 +96,7 @@ const Profile = ({ user }) => {
                   type='text'
                   name='lastName'
                   value={userProfile.lastName}
-                  className='bg-secondaryBackground border-black border rounded pl-2 py-1'
+                  className='bg-secondaryBackground border-black border rounded pl-2 py-1 w-full sm:w-[normal]'
                   onChange={(e) => handleChange(e)}
                 />
               </div>
