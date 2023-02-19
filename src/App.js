@@ -14,10 +14,13 @@ import {
   GeNigeria,
   Signup,
   Login,
+  Dashboard,
 } from './pages';
 
 import './styles/App.scss';
 import auth from './services/authService';
+import ProtectedRoute from './components/protected/ProtectedRoute';
+import Profile from './pages/dashboard/Profile';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -49,6 +52,16 @@ function App() {
 
       <main>
         <Routers>
+          <Route
+            path='/dashboard'
+            element={
+              <ProtectedRoute>
+                <Dashboard user={user} />
+              </ProtectedRoute>
+            }
+          >
+            <Route path='/dashboard' element={<Profile user={user} />}></Route>
+          </Route>
           <Route path='/signup' element={<Signup />} />
           <Route path='/login' element={<Login />} />
           <Route path='/contact' element={<Contact />} />

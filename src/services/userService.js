@@ -24,8 +24,8 @@ export function signup(user) {
   );
 }
 
-export function getUserDetails() {
-  return http.get(apiEndpoint + '/profile', config);
+export function getUserProfile(id) {
+  return http.get(`${apiEndpoint}/${id}/profile`, config);
 }
 
 export function updateUserDetails(user) {

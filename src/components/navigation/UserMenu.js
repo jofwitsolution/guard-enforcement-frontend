@@ -38,7 +38,7 @@ function UserMenu({ handleShowMenu, userIconRef, user }) {
         <ul className='px-2 text-blackText'>
           <li>
             <Link
-              href={'/blog/profile'}
+              to={'/dashboard'}
               className='hover:bg-secondaryBackground inline-block mx-auto w-[100%] pl-4 py-2 rounded-md'
             >
               {name}
@@ -47,7 +47,7 @@ function UserMenu({ handleShowMenu, userIconRef, user }) {
           <li className='border border-[rgba(0,0,0,0.13)] my-2'></li>
           <li>
             <Link
-              href={'/dashboard'}
+              to={'/dashboard'}
               className='hover:bg-secondaryBackground inline-block mx-auto w-[100%] pl-4 py-2 rounded-md'
             >
               Dashboard
@@ -55,15 +55,15 @@ function UserMenu({ handleShowMenu, userIconRef, user }) {
           </li>
           <li>
             <Link
-              href={'/blog/new'}
+              to={'/dashboard/edit-profile'}
               className='hover:bg-secondaryBackground inline-block mx-auto w-[100%] pl-4 py-2 rounded-md'
             >
-              Create Post
+              Edit Profile
             </Link>
           </li>
           <li>
             <Link
-              href={'/blog/settings'}
+              to={'/dashboard/settings'}
               className='hover:bg-secondaryBackground inline-block mx-auto w-[100%] pl-4 py-2 rounded-md'
             >
               Settings
