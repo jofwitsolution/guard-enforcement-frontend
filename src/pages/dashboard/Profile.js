@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 import styles from '../../styles/tailwind';
-import { getUserProfile } from '../../services/userService';
+import { getUserProfile, updateUserProfile } from '../../services/userService';
 import DashboardLoading from '../../components/loaders/DashboardLoading';
 import { toDateString } from '../../utils/dateHelper';
 
@@ -21,6 +21,7 @@ const Profile = ({ user }) => {
     updatedAt: '',
   });
   const [userProfileLoading, setUserProfileLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
     const getUser = async () => {
@@ -40,9 +41,36 @@ const Profile = ({ user }) => {
   }, [user]);
 
   const handleChange = (e) => {
-    const newUserProfile = { ...userProfile };
-    newUserProfile[e.target.name] = e.target.value;
-    setUserProfile(newUserProfile);
+    setUserProfile({ ...userProfile, [e.target.name]: e.target.value });
+  };
+
+  const cancel = () => {
+    console.log(userProfile);
+  };
+
+  const updateProfile = async () => {
+    setUserProfileLoading(true);
+    setErrorMessage('');
+
+    const formData = {
+      firstName: userProfile.firstName,
+      lastName: userProfile.lastName,
+      phone: userProfile.phone,
+      address: userProfile.address,
+      country: userProfile.country,
+    };
+
+    try {
+      const { data } = await updateUserProfile(formData, user.id);
+      setUserProfile({ ...userProfile, ...data, token: undefined });
+      setFullName(`${data.firstName} ${data.lastName}`);
+      setUserProfileLoading(false);
+    } catch (error) {
+      if (error.response && error.response?.data) {
+        setErrorMessage(error.response.data.message);
+      }
+      setUserProfileLoading(false);
+    }
   };
 
   if (userProfileLoading) {
@@ -69,12 +97,24 @@ const Profile = ({ user }) => {
           </div>
 
           <div className='flex gap-3 mt-4 sm:mt-0'>
-            <span className={`${styles.buttonThree}`}>Cancel</span>
-            <span className={`${styles.buttonFour}`}>Save</span>
+            <span onClick={() => cancel()} className={`${styles.buttonThree}`}>
+              Cancel
+            </span>
+            <span
+              onClick={() => updateProfile()}
+              className={`${styles.buttonFour}`}
+            >
+              Save
+            </span>
           </div>
         </div>
         <div className='sm:grid sm:place-content-center mt-5 md:mt-10'>
           <div className=''>
+            {errorMessage && (
+              <p className='text-center text-red-600 text-[14px] mb-4'>
+                {errorMessage}
+              </p>
+            )}
             <div className='flex flex-col sm:flex-row gap-4 sm:gap-6 mb-4'>
               <div className=''>
                 <label htmlFor='firstName' className='block'>
@@ -112,6 +152,7 @@ const Profile = ({ user }) => {
                 value={userProfile.email}
                 className='bg-secondaryBackground border-black border rounded pl-2 py-1 w-full'
                 onChange={(e) => handleChange(e)}
+                disabled={!user.isAdmin}
               />
             </div>
             <div className='mb-4'>

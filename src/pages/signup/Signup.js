@@ -7,6 +7,7 @@ import RotatingLinesLoader from '../../components/loaders/RotatingLinesLoader';
 import { signupSchema } from '../../form-validation/validationSchemas';
 import { signup } from '../../services/userService';
 import { loginWithJwt } from '../../services/authService';
+import Meta from '../../components/Meta';
 
 const Signup = () => {
   const [error, setError] = useState('');
@@ -27,6 +28,7 @@ const Signup = () => {
 
   return (
     <div className={`${styles.maxWidth} py-[4rem] flex flex-col items-center`}>
+      <Meta title={'Sign Up - Guard Enforcement'} />
       <h1
         className={`text-[1.5rem] md:text-[2.5rem] font-bold text-blackText text-center`}
       >

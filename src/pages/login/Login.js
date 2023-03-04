@@ -6,6 +6,7 @@ import { MyTextInput } from '../../components/forms';
 import RotatingLinesLoader from '../../components/loaders/RotatingLinesLoader';
 import { loginSchema } from '../../form-validation/validationSchemas';
 import auth from '../../services/authService';
+import Meta from '../../components/Meta';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -30,6 +31,7 @@ const Login = () => {
 
   return (
     <div className={`${styles.maxWidth} py-[4rem] flex flex-col items-center`}>
+      <Meta title={'Log In - Guard Enforcement'} />
       <h1
         className={`text-[1.5rem] md:text-[2.5rem] font-bold text-blackText text-center`}
       >

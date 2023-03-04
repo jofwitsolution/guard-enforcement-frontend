@@ -28,16 +28,15 @@ export function getUserProfile(id) {
   return http.get(`${apiEndpoint}/${id}/profile`, config);
 }
 
-export function updateUserDetails(user) {
-  return http.put(
-    apiEndpoint + '/profile',
+export function updateUserProfile(data, id) {
+  return http.patch(
+    `${apiEndpoint}/${id}/profile`,
     {
-      firstName: user.firstName,
-      lastName: user.lastName,
-      phone: user.phone,
-      bio: user.bio,
-      country: user.country,
-      level: user.level,
+      firstName: data.firstName,
+      lastName: data.lastName,
+      phone: data.phone,
+      address: data.address,
+      country: data.country,
     },
     config
   );
